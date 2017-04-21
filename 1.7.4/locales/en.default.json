@@ -169,6 +169,7 @@
     "search": {
       "heading": "Search",
       "placeholder": "Looking for...",
+      "search_snackoo": "Search Snackoo",
       "placeholder_for_header": "Type your search request",
       "header_full_placeholder_normal_state": "I’m looking for...",
       "header_full_placeholder_voice_state": "Recording...",

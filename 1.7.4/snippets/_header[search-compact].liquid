@@ -1,9 +1,38 @@
-<div class="search-container">
+<style>
+  .search-container{
+    right: 0;
+    left: auto;
+  }
+  .search-container > form{
+    padding: 17px 0 18px 0;
+  }
+  .search-container.open > form >  input{
+    font-weight:600;
+    border: solid 1px gray;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+
+    padding: 5px 0 5px 10px !important;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    height: 34px;
+  }
+  .search-container.open > form >  input::-webkit-input-placeholder{
+    color: gray;
+    font-weight: 500;
+  }
+</style>
+
+<!--add open so that it expands-->
+<div class="search-container open">
   <form action="/search" method="GET" class="form form--search-primary" role="search">
     {% if settings.search_type == 'products' %}
       <input type="hidden" name="type" value="product" />
     {% endif %}
-    <input type="text" name="q" class="form__field" placeholder="{{ 'layout.search.placeholder_for_header' | t }}" autocomplete="off">
+    <input type="text" name="q" class="form__field" placeholder="{{ 'layout.search.search_snackoo' | t }}" autocomplete="on">
 
     <div class="icon icon--search js-icon--search">
       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="18" height="18" viewBox="0 0 18 18">

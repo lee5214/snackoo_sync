@@ -1,7 +1,17 @@
-<!-- Shop logo -->          
+<style>
+    .site-logo > img{
+        height: 40px !important;
+        display: block;
+        margin-left:0;
+        margin-top: 15px;
+        //transform: translateY(50%);
+    }
+</style>
+
+<!-- Shop logo -->
 {% if settings.logo_use_image %}
-  {% capture logo_img %}{{ settings.logo | img_url: '120x' | format: 'png' }}{% endcapture %}
-  <a class="site-logo" href="/">
+  {% capture logo_img %}{{ settings.logo | img_url: '480x' | format: 'png' }}{% endcapture %}
+  <a class="site-logo" style="display:block;" href="/">
     {% if logo_img contains 'no-image' %}
       <img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}">
     {% else %}

@@ -143,8 +143,9 @@ define(['jquery', 'utils'], function($, utils) {
         // Unfixing header
         DOM.header.classList.remove('fixed');
       }
-    }
 */
+    }
+
     window.addEventListener('scroll', function() {
       checkScrollHeader();
     });
