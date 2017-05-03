@@ -1,0 +1,65 @@
+<!-- Swiper -->
+<style>
+	.swiper-container{
+		width: 1000px;
+	}
+	.swiper-slide > .product > .product__info > .product__title{
+		font-size: 12px;
+		min-height: 50px;
+	}
+
+</style>
+<div class="swiper-container carousel carousel-section-product-grid" data-autoplay="{{ autoplay }}">
+	<p>grid products</p>
+	<div class="swiper-wrapper">
+		{% for product in collections[section.settings.section-products_grid].products %}
+			<div class="swiper-slide" data-img-bg="{% if product.featured_image.size > 0 %}{{ product.featured_image | img_url: 'small'}}{% else %}{{ 'img_no_image.jpg' | asset_url }}{% endif %}">
+				{% include 'product-item-grid-2rows' %}
+			</div>
+		{% endfor %}
+
+	</div>
+
+	<div class="carousel__navigation">
+		<!-- Add Arrows -->
+		<div class="homepage-swiper-btn-next1 carousel-button-next">
+			<span class="icon icon--arrow-right"></span>
+		</div>
+		<!-- Add Pagination -->
+		<div class="swiper-active-slide"></div>
+
+		<div class="homepage-swiper-btn-prev1 carousel-button-prev">
+			<span class="icon icon--arrow-left"></span>
+		</div>
+	</div>
+</div>
+
+<script>
+
+</script>
+{% schema %}
+{
+"name": "Section Product Grid",
+"settings": [
+{
+"type": "collection",
+"id": "section-products_grid",
+"label": "section Product Grid"
+},
+{
+"type": "text",
+"id": "autoplay",
+"label": "Time",
+"info": "If this parameter is not specified, autoplay will be disabled. The value should be in milliseconds"
+}
+],
+"presets": [
+{
+"name": "Section Product Grid",
+"category": "Collections"
+}
+]
+}
+{% endschema %}
+
+

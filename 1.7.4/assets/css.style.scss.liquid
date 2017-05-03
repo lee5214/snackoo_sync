@@ -4897,7 +4897,7 @@ th, td {
       @include content-tl(0px, 0px, 100%, 100%, $colorHighlight);
       opacity: 0;
       z-index: 3;
-      @include transition(opacity 320ms ease-in-out);
+      //@include transition(opacity 320ms ease-in-out);
     }
   }
 
@@ -6555,26 +6555,34 @@ th, td {
   }
 
   .flex-control-thumbs {
-    margin-top: -110px;
-    padding-top: 20px;
-    width: 110px;
+    display: table;
+    margin: 1052px  auto;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    /* max-width: 944px; */
     position: absolute;
-    right: 5px;
-    top: 50%;
+    /* right: 5px; */
+    top: 0;
     bottom: initial;
     z-index: 2;
+    left: 50%;
+    transform: translatex(-50%);
   }
 
   .flex-control-thumbs li {
-    margin: 0 auto;
-    margin-bottom: 30px;
+    //padding: 10px;
+    border-radius: 50%;
+
+    margin: -4px 10px;
+    margin-bottom: 150px;
     width: 70px;
     height: 70px;
     display: block;
     position: relative;
     overflow: hidden;
-    float: none;
-    border-radius: 50%;
+    float: left;
+    //border-radius: 50%;
     border: 4px solid $colorInverse;
     z-index: 2;
     @include transition(transform 220ms ease-in-out);
@@ -6589,7 +6597,7 @@ th, td {
 
     &.active-thumb {
       border-color: transparent;
-      opacity: .3;
+      //opacity: .3;
     }
   }
 }

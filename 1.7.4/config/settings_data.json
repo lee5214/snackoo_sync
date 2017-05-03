@@ -509,6 +509,13 @@
           "slideshow_time_animation": "7000",
           "slideshow_zoom": true
         }
+      },
+      "products_grid": {
+        "type": "products_grid",
+        "settings": {
+          "products_grid": "all",
+          "autoplay": ""
+        }
       }
     },
     "content_for_index": [
@@ -518,7 +525,8 @@
       "1477743502227",
       "1477907361972",
       "1477906775199",
-      "1477748103439"
+      "1477748103439",
+      "poducts_grid"
     ]
   }
 }

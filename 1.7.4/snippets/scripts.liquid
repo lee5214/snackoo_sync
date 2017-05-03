@@ -225,12 +225,12 @@
     (sections/featured-carousel.liquid)
     ---------------------------------------------------------
   */ 
-  if (document.querySelector('.carousel--homepage')) {
+  if (document.querySelector('.carousel-section-featured-product')) {
     require(['swiper', 'utils'], function(Swiper, utils){
-
+      console.log("swiper for .carousel-section-product-grid");
       var DOM = utils.domFinder({
         activeSlideContainer: '.swiper-active-slide',
-        carouselContainer:    '.carousel--homepage'
+        carouselContainer:    '.carousel-section-featured-product'
       });
 
       var autoplaySetting      = parseInt(DOM.carouselContainer.getAttribute('data-autoplay'), 10) || 0;
@@ -265,21 +265,85 @@
         lazyLoading: true,
         breakpoints: {
           1024: {
+            slidesPerView: 4,
+            slidesPerGroup: 4
+          },
+          768: {
             slidesPerView: 3,
             slidesPerGroup: 3
           },
-          768: {
+          480: {
             slidesPerView: 2,
             slidesPerGroup: 2
-          },
-          480: {
-            slidesPerView: 1,
-            slidesPerGroup: 1
           }
         }
       });
     });
   }
+  /*
+   ---------------------------------------------------------
+   Carousel with products_grid
+   (sections/section-products_grid.liquid)
+   ---------------------------------------------------------
+   */
+  if (document.querySelector('.carousel-section-product-grid')) {
+      require(['swiper', 'utils'], function(Swiper, utils){
+          console.log("swiper for .carousel-section-product-grid");
+          var DOM = utils.domFinder({
+              activeSlideContainer: '.swiper-active-slide',
+              carouselContainer:    '.carousel-section-product-grid'
+          });
+
+          var autoplaySetting      = parseInt(DOM.carouselContainer.getAttribute('data-autoplay'), 10) || 0;
+
+          // Featured carousel
+          var allowLinksClick = true;
+          new Swiper(DOM.carouselContainer, {
+              nextButton: '.homepage-swiper-btn-next1',
+              prevButton: '.homepage-swiper-btn-prev1',
+              preventClicks: false,
+              spaceBetween: 1,
+              slidesPerGroup: 6,
+              slidesPerView: 6,
+              slidesPerColumn : 2,
+              loop: false,
+              autoplay: autoplaySetting,
+              onInit: function(carouselHomepage) {
+                  var slideNumber = carouselHomepage.slides.length;
+                  var bdImage, slideLink;
+                  DOM.activeSlideContainer.textContent = carouselHomepage.activeIndex + 1 + "/" + slideNumber;
+
+                  for ( var i = 0, max = slideNumber; i < max; i++ ) {
+                      bdImage = carouselHomepage.slides[i].getAttribute('data-img-bg');
+                      slideLink = carouselHomepage.slides[i].querySelector('.product__link ');
+                      slideLink.style.backgroundImage = 'url(' + bdImage + ')';
+                  }
+              },
+              onSlideChangeStart: function(carouselHomepage) {
+                  var slideNumber = carouselHomepage.slides.length;
+                  DOM.activeSlideContainer.textContent = carouselHomepage.activeIndex + 1 + "/" + slideNumber;
+              },
+              preloadImages: false,
+              lazyLoading: true,
+              breakpoints: {
+                  1024: {
+                      slidesPerView: 6,
+                      slidesPerGroup: 6
+                  },
+                  768: {
+                      slidesPerView: 6,
+                      slidesPerGroup: 6
+                  },
+                  480: {
+                      slidesPerView: 4,
+                      slidesPerGroup: 4
+                  }
+              }
+          });
+      });
+  }
+
+
 
   /*
     ---------------------------------------------------------

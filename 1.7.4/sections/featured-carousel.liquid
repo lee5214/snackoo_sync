@@ -11,8 +11,9 @@ For settings go to Admin -> Theme -> Customize Theme -> Home page
   {%- endif -%}
 
   <!-- Swiper -->
-  <div class="swiper-container carousel carousel--homepage" data-autoplay="{{ autoplay }}">
-    <div class="swiper-wrapper">
+  <div class="swiper-container carousel carousel--homepage carousel-section-featured-product" data-autoplay="{{ autoplay }}">
+    <p>featured products</p>
+      <div class="swiper-wrapper">
       {% for product in collections[section.settings.featured_collection].products %}
         <div class="swiper-slide" data-img-bg="{% if product.featured_image.size > 0 %}{{ product.featured_image | img_url: 'grande'}}{% else %}{{ 'img_no_image.jpg' | asset_url }}{% endif %}">
           {% include 'product-item-grid' %}

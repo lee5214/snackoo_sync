@@ -1,14 +1,14 @@
 {
   "current": {
-    "popup_enable": false,
+    "popup_enable": true,
     "popup_bg": "shopify:\/\/shop_images\/Untitled-1.jpg",
     "popup_heading": "Enjoy 10% off",
     "popup_discount_offer": "",
     "popup_discount_code": "",
-    "popup_discount_info": "your current full-price purchase when you sign up to receive Snackoo emails. Plus, you'll be the first to know about new arrivals, special offers, and exclusive events.",
+    "popup_discount_info": "on your current purchase when you sign up to receive Snackoo emails. Plus, you'll be the first to know about new arrivals, special offers, and exclusive events.",
     "popup_link": "",
     "popup_link_text": "",
-    "popup_days": "14",
+    "popup_days": "30",
     "bg_image_choice": "",
     "bg_image_display": "bg_image_title",
     "color_body_bg": "#ffffff",
@@ -29,7 +29,7 @@
     "font_additional_family": "Google_Raleway_300,400,600,800_sans",
     "font_accent_family": "Google_Raleway_300,400,600,800_sans",
     "favicon_enable": true,
-    "favicon": "shopify:\/\/shop_images\/snackoocom_BOX_DESIGN.png",
+    "favicon": "shopify:\/\/shop_images\/img_password_page_logo.png",
     "product_share_btns_heading": "",
     "product_share_btns_facebook": true,
     "product_share_btns_twitter": true,
@@ -82,9 +82,9 @@
     "blog_sorting_api_key": "",
     "blog_sorting_api_password": "",
     "blog_article_per_page": "5",
-    "contact_banner_enable": false,
-    "contact_heading_em": "",
-    "contact_heading": "",
+    "contact_banner_enable": true,
+    "contact_heading_em": "<h4 style=\"line-height:2; font-size:0.8em;\">Contact<\/h4>",
+    "contact_heading": "leave message here",
     "contact_short_hours_enable": true,
     "contact_short_hours": "09.00-18.00 (PST) MON - FRI",
     "contact_short_email_enable": true,
@@ -335,7 +335,7 @@
             "type": "help",
             "settings": {
               "title": "Help",
-              "help_text": "<ul><li><i class='fa fa-envelope'><\/i><a href='mailto:info@snackoo.com'>info@snackoo.com<\/a><\/li><li><i class='fa fa-phone'><\/i><a href='https:\/\/snackooinc.myshopify.com\/pages\/contact'>Contact Us<\/a><\/li><li><i class='fa fa-search'><\/i><a href='https:\/\/snackooinc.myshopify.com\/search'>Search<\/a><\/li><\/ul>"
+              "help_text": "<ul>\n<li>\n<i class=\"fa fa-envelope\"><\/i><a href=\"mailto:info@snackoo.com\">info@snackoo.com<\/a>\n<\/li>\n<li>\n<i class=\"fa fa-phone\"><\/i><a href=\"https:\/\/snackooinc.myshopify.com\/pages\/contact\">Contact Us<\/a>\n<\/li>\n<li>\n<i class=\"fa fa-search\"><\/i><a href=\"https:\/\/snackooinc.myshopify.com\/search\">Search<\/a>\n<\/li>\n<\/ul>"
             }
           },
           "1477729345875": {
@@ -387,13 +387,13 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
-          "1489026727915": {
+          "1492825837086": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/DSC_26852_70810809-535a-4655-85dc-89052ae3c76d.png",
-              "image_thumb": "shopify:\/\/shop_images\/30790_bbddab33-7a7e-4d78-91c0-9f06f53e88de.png",
+              "image": "shopify:\/\/shop_images\/2-03_2.png",
+              "image_thumb": "shopify:\/\/shop_images\/dd_-2-08.png",
               "link": "shopify:\/\/collections\/royce-collection",
-              "heading": "Royce<br>Melting spring at your mouth",
+              "heading": "<h4>Royce'<\/h4>",
               "subheading": "shop now",
               "price": "",
               "price_desc": "",
@@ -404,11 +404,11 @@
           "1477737960076": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/DSC_2651_bf79dd6f-c45b-4f48-b144-222d9dc3993a.png",
-              "image_thumb": "shopify:\/\/shop_images\/Screen_Shot_2017-03-02_at_2.26.16_PM_2ddd171d-2601-4df4-baea-712658cc6a10.png",
-              "link": "shopify:\/\/collections\/calbee-collection",
-              "heading": "Calbee <br>The hottest potato fries from Japan",
-              "subheading": "Shop now",
+              "image": "shopify:\/\/shop_images\/ccc_-2-03.png",
+              "image_thumb": "shopify:\/\/shop_images\/12-06.png",
+              "link": "shopify:\/\/collections\/pablo",
+              "heading": "<h4>Pablo<\/h4>",
+              "subheading": "shop now",
               "price": "",
               "price_desc": "",
               "heading_add": "",
@@ -418,10 +418,66 @@
           "1489547106333": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Slider20170314-013_b330c704-61f3-454d-bf16-06d7b655e716.jpg",
-              "image_thumb": "shopify:\/\/shop_images\/5-1_71e219a3-513d-47e4-8bab-d4cf9c1d7bc6.jpg",
-              "link": "shopify:\/\/collections\/korean-special",
-              "heading": "Gilim <br> Top-1 Almond From Korea",
+              "image": "shopify:\/\/shop_images\/2222-03.png",
+              "image_thumb": "shopify:\/\/shop_images\/222-06.png",
+              "link": "shopify:\/\/collections\/slidecollection_ishiya",
+              "heading": "<h4>Ishiya<\/h4>",
+              "subheading": "shop now",
+              "price": "",
+              "price_desc": "",
+              "heading_add": "",
+              "subheading_add": ""
+            }
+          },
+          "1489026727915": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/21-03.png",
+              "image_thumb": "shopify:\/\/shop_images\/22_-2-06.png",
+              "link": "shopify:\/\/collections\/kobe-pudding",
+              "heading": "<h4>Kobe Pudding<\/h4>",
+              "subheading": "shop now",
+              "price": "",
+              "price_desc": "",
+              "heading_add": "",
+              "subheading_add": ""
+            }
+          },
+          "1492473948551": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2-03_3a8ee13f-a903-40d5-b034-51a4009518fd.png",
+              "image_thumb": "shopify:\/\/shop_images\/333-06.png",
+              "link": "shopify:\/\/products\/tokyo-milk-cheese-factory-salt-camembert-cookies-10-pcs",
+              "heading": "<h4>Salt &amp; Camembert Cookies<\/h4>",
+              "subheading": "shop now",
+              "price": "",
+              "price_desc": "",
+              "heading_add": "",
+              "subheading_add": ""
+            }
+          },
+          "1492474107001": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2-03_61b9811b-a060-40bf-a32a-0e003fb7faf7.png",
+              "image_thumb": "shopify:\/\/shop_images\/111-06.png",
+              "link": "shopify:\/\/collections\/tokyo-banana",
+              "heading": "<h4>Tokyo Banana<\/h4>",
+              "subheading": "shop now",
+              "price": "",
+              "price_desc": "",
+              "heading_add": "",
+              "subheading_add": ""
+            }
+          },
+          "1492474194146": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/rrr_-2-03.png",
+              "image_thumb": "shopify:\/\/shop_images\/06.png",
+              "link": "shopify:\/\/products\/sugar-butter-sand-tree-7-pcs",
+              "heading": "<h4>Sugar Butter Sand Tree<\/h4>",
               "subheading": "shop now",
               "price": "",
               "price_desc": "",
@@ -431,9 +487,13 @@
           }
         },
         "block_order": [
-          "1489026727915",
+          "1492825837086",
           "1477737960076",
-          "1489547106333"
+          "1489547106333",
+          "1489026727915",
+          "1492473948551",
+          "1492474107001",
+          "1492474194146"
         ],
         "settings": {
           "slideshow_effect": "fade",
@@ -464,31 +524,31 @@
           "1477745788845": {
             "type": "offer_section",
             "settings": {
-              "img__special_offer_lg": "shopify:\/\/shop_images\/Ramen-Guide-Gear-Patrol-Lead-1440_1_066e1d68-d1e0-42bd-b4f7-d2093ece94fa.jpg",
-              "img__special_offer_xs": "shopify:\/\/shop_images\/Ramen-Guide-Gear-Patrol-Lead-1440_1.jpg",
-              "heading": "Quality Meals At Home",
+              "img__special_offer_lg": "shopify:\/\/shop_images\/2-02_2_63b3efb0-d520-4b50-bf0a-66321daa4533.png",
+              "img__special_offer_xs": "shopify:\/\/shop_images\/2-02_2_721a063c-dbb4-437a-b3eb-9ea83faa93d5.png",
+              "heading": "Fruit",
               "subheading": "",
-              "mark_enable": true,
+              "mark_enable": false,
               "color_mark": "#4ee377",
               "color_mark_text": "#fff5f5",
               "mark_title": "",
               "mark_price": "Enjoy",
-              "btn_url": "shopify:\/\/collections\/meals"
+              "btn_url": "shopify:\/\/collections\/fruit-1"
             }
           },
           "1477745429658": {
             "type": "offer_section",
             "settings": {
-              "img__special_offer_lg": "shopify:\/\/shop_images\/DSC_1987_2_c9ad652d-9d20-4ec8-acb2-51158609fb41.jpg",
-              "img__special_offer_xs": "shopify:\/\/shop_images\/DSC_1987_2_c9ad652d-9d20-4ec8-acb2-51158609fb41.jpg",
-              "heading": "Gift Guide",
+              "img__special_offer_lg": "shopify:\/\/shop_images\/2-01_1.png",
+              "img__special_offer_xs": "shopify:\/\/shop_images\/2-01_1_5ffc43cd-7162-49d7-b369-696c6038d467.png",
+              "heading": "Noodle",
               "subheading": "",
-              "mark_enable": true,
+              "mark_enable": false,
               "color_mark": "#65aef2",
               "color_mark_text": "#ffffff",
               "mark_title": "with each other",
               "mark_price": "Together",
-              "btn_url": "shopify:\/\/collections\/valentines-day-gift-guide"
+              "btn_url": "shopify:\/\/collections\/noodle"
             }
           }
         },
@@ -528,33 +588,33 @@
           "1482361797784-0": {
             "type": "collection",
             "settings": {
-              "collection": "popular-products"
-            }
-          },
-          "1482361797784-1": {
-            "type": "collection",
-            "settings": {
-              "collection": "healthy-options"
+              "collection": "japanese"
             }
           },
           "1482361797784-2": {
             "type": "collection",
             "settings": {
-              "collection": "student-discount"
+              "collection": "tea-time"
+            }
+          },
+          "1482361797784-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "live-naturally"
             }
           }
         },
         "block_order": [
           "1482361797784-0",
-          "1482361797784-1",
-          "1482361797784-2"
+          "1482361797784-2",
+          "1482361797784-1"
         ],
         "settings": {}
       },
       "featured-carouse_1": {
         "type": "featured-carousel",
         "settings": {
-          "featured_collection": "newest-products",
+          "featured_collection": "featured-products",
           "autoplay": "4"
         }
       },

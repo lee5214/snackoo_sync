@@ -1,7 +1,13 @@
 {% comment %}
 Snippet is used to show products in 'collection.liquid', 'similar-product-carousel-collection.liquid'
 {% endcomment %}
+
 <div class="product grid--in-row">
+	<div class="product_grid-buy_layer">
+		<button>
+			<span>add to bag</span>
+		</button>
+	</div>
 	<a  class="product__link {% unless product.available %}product--sold-out{% endunless %}" href="{{ product.url }}" title="{{ product.title }}">
     <div class="img-holder img-holder--product {% unless product.featured_image.size > 0 %}img-holder--no-product{% endunless %}">
       
@@ -45,7 +51,8 @@ Snippet is used to show products in 'collection.liquid', 'similar-product-carous
         {% else %}
           {{ product.first_available_variant.weight_unit }}
         {% endif %}   
-      {% endif %}          
+      {% endif %}
+
     </span>
   </div> <!-- End product__info -->
 </div> <!-- End product -->

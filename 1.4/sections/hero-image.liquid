@@ -6,9 +6,7 @@
     {% if section.settings.description != blank %}
       <p class="hero-image__desc">{{ section.settings.description }}</p>
     {% endif %}
-    <a class="btn btn--default" href="{{ section.settings.link }}" title="{{ 'general.hero_image.button' | t }}">
-        {{ 'general.hero_image.button' | t }}
-    </a>
+    <a class="btn btn--default" href="{{ section.settings.link }}" title="{{ 'general.hero_image.button' | t }}">{{ 'general.hero_image.button' | t }}</a>
   </div>
 </section>
 
