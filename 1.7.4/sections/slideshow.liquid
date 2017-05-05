@@ -1,36 +1,36 @@
 {% if section.blocks.size > 0 %}
-<style>
-  {%- if section.settings.position_y -%}
-  @media (min-width: 769px) {
-    .flexslider-thumb--homepage { 
-      margin-top: {{- section.settings.position_y -}}px;
+  <style>
+    {%- if section.settings.position_y -%}
+    @media (min-width: 769px) {
+      .flexslider-thumb--homepage {
+        margin-top: {{- section.settings.position_y -}}px;
+      }
     }
-  }
-  {%- endif -%}
-  
-  {%- if section.settings.slideshow_zoom == false -%}
-  .flexslider-thumb--homepage .slide {
-  	background-size: initial;
-  }
-  {%- endif -%}
+    {%- endif -%}
 
-</style>
+    {%- if section.settings.slideshow_zoom == false -%}
+    .flexslider-thumb--homepage .slide {
+      background-size: initial;
+    }
+    {%- endif -%}
+
+  </style>
 
 
 <!-- Flexslider -->
-{%- if section.settings.slideshow_autoplay -%}
-  {%- assign autoplay = true -%}
-  {%- assign autoplaySpeed = section.settings.slideshow_time_animation -%}
-{%- else -%}
-  {%- assign autoplay = false -%}
-  {%- assign autoplaySpeed = 0 -%}
-{%- endif -%}
+  {%- if section.settings.slideshow_autoplay -%}
+    {%- assign autoplay = true -%}
+    {%- assign autoplaySpeed = section.settings.slideshow_time_animation -%}
+  {%- else -%}
+    {%- assign autoplay = false -%}
+    {%- assign autoplaySpeed = 0 -%}
+  {%- endif -%}
 
-{% if section.settings.slideshow_effect %}
-  {%- assign slideshow_effect = section.settings.slideshow_effect -%}
-{% else %}
-  {%- assign slideshow_effect = 'fade' -%}
-{% endif %}
+  {% if section.settings.slideshow_effect %}
+    {%- assign slideshow_effect = section.settings.slideshow_effect -%}
+  {% else %}
+    {%- assign slideshow_effect = 'fade' -%}
+  {% endif %}
 
 <div class="flexslider flexslider-thumb flexslider-thumb--homepage" data-autoplay="{{- autoplay -}}" data-autoplay-speed="{{- autoplaySpeed -}}" data-slideshow-effect="{{- slideshow_effect -}}">
   <ul class="slides">

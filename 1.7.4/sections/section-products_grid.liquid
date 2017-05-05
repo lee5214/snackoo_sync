@@ -9,8 +9,8 @@
 	}
 
 </style>
+<span class="section__subtitle">{{ section.settings.sec_subtitle }}</span>
 <div class="swiper-container carousel carousel-section-product-grid" data-autoplay="{{ autoplay }}">
-	<p>grid products</p>
 	<div class="swiper-wrapper">
 		{% for product in collections[section.settings.section-products_grid].products %}
 			<div class="swiper-slide" data-img-bg="{% if product.featured_image.size > 0 %}{{ product.featured_image | img_url: 'small'}}{% else %}{{ 'img_no_image.jpg' | asset_url }}{% endif %}">
@@ -44,13 +44,19 @@
 {
 "type": "collection",
 "id": "section-products_grid",
-"label": "section Product Grid"
+"label": "Section Product Grid"
 },
 {
 "type": "text",
 "id": "autoplay",
 "label": "Time",
 "info": "If this parameter is not specified, autoplay will be disabled. The value should be in milliseconds"
+},
+{
+"type": "text",
+"id": "sec_subtitle",
+"label": "title",
+"info": "input a name for this sec"
 }
 ],
 "presets": [

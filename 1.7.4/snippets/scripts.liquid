@@ -190,11 +190,11 @@
     ---------------------------------------------------------
   */                          
   if (document.querySelector('.flexslider-thumb--homepage')) {
-    
+
     require(['jquery.flexslider'], function(){
 
-      var $thumbs; 
-      var $homepageSliderContainer = $('.flexslider-thumb');
+      var $thumbs;
+      var $homepageSliderContainer = $('.flexslider-thumb--homepage');
 
       var autoplay        = $homepageSliderContainer.attr('data-autoplay') == 'true';
       var autoplaySpeed   = parseInt($homepageSliderContainer.attr('data-autoplay-speed'));
@@ -207,17 +207,19 @@
         slideshow: autoplay,
         slideshowSpeed: autoplaySpeed,
         start: function(slider) {
-          $thumbs = $homepageSliderContainer.find('.flex-control-thumbs li');          
+          $thumbs = $homepageSliderContainer.find('.flex-control-thumbs li');
           $($thumbs[slider.currentSlide]).addClass('active-thumb');
         },
         before: function(slider) {
           $homepageSliderContainer.find('.active-thumb').removeClass('active-thumb');
-          $thumbs = $homepageSliderContainer.find('.flex-control-thumbs li');          
+          $thumbs = $homepageSliderContainer.find('.flex-control-thumbs li');
           $($thumbs[slider.animatingTo]).addClass('active-thumb');
         }
       });
     });
   }
+
+
 
   /*
     ---------------------------------------------------------

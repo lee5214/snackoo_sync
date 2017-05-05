@@ -5,7 +5,7 @@ Snippet is used to show products in 'collection.liquid', 'similar-product-carous
 <div class="product grid--in-row">
 	<div class="product_grid-buy_layer">
 		<button>
-			<span>add to bag</span>
+			<span>check product</span>
 		</button>
 	</div>
 	<a  class="product__link {% unless product.available %}product--sold-out{% endunless %}" href="{{ product.url }}" title="{{ product.title }}">
@@ -43,16 +43,19 @@ Snippet is used to show products in 'collection.liquid', 'similar-product-carous
       {% else %}
         {{ 'products.general.out_stock' | t }}
       {% endif %}
-
+{% comment %}
       {% if settings.product_size_unit_enable %}       
         &nbsp;|&nbsp;   
         {% if product.first_available_variant.option1 != 'Default Title' %}
           {{ product.first_available_variant.option1 }}
         {% else %}
-          {{ product.first_available_variant.weight_unit }}
+          {{ product.first_available_variant.weight }}
         {% endif %}   
       {% endif %}
-
+{% endcomment %}
+	<span class="product_spec_vendor">
+	  {{ product.vendor | link_to_vendor}}
+	</span>
     </span>
   </div> <!-- End product__info -->
 </div> <!-- End product -->
