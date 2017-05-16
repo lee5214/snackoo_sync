@@ -160,7 +160,8 @@
       "orders": "Orders",
       "addresses": "Addresses",
       "wishlist": "Wishlist",
-      "currency": "Currency"
+      "currency": "Currency",
+      "brands_menu": "Brands"
     },
     "cart": {
       "open_cart": "Open cart",

@@ -6,7 +6,12 @@
   .search-container > form{
     padding: 17px 0 18px 0;
   }
-  .search-container.open > form >  input{
+/*these two will hide search on click if change to .search-container.open*/
+  .search-container .form__field{
+    width: 210px;
+  }
+
+  .search-container > form >  input{
     font-weight:600;
     border: solid 1px gray;
     -webkit-border-radius: 50px;
@@ -14,12 +19,13 @@
     border-radius: 50px;
 
     padding: 5px 0 5px 10px !important;
-    font-size: 14px;
+    font-size: 12px!important;
     line-height: 19px;
     letter-spacing: .1em;
     text-transform: uppercase;
     height: 34px;
   }
+/**/
   .search-container.open > form >  input::-webkit-input-placeholder{
     color: gray;
     font-weight: 500;

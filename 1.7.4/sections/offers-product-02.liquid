@@ -1,6 +1,8 @@
 {% assign special_product = all_products[section.settings.product] %}  
 
 <section class="section section--special-offer clearfix">
+	{% assign home_sec_name = 'Special Item' %}
+	{% include 'homepage-section-subtitle' with home_sec_name %}
   <div class="product product--lg product--lg-alt product--full">
     <div class="image-wrapper {% unless special_product.available %}product--sold-out{% endunless %}">
       <div class="img-holder img-holder--product {% unless special_product.featured_image.size > 0 %}img-holder--no-product{% endunless %}">

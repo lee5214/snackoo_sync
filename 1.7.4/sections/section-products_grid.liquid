@@ -9,7 +9,24 @@
 	}
 
 </style>
-<span class="section__subtitle">{{ section.settings.sec_subtitle }}</span>
+
+
+{% assign home_sec_name = 'New Arrivels' %}
+{% include 'homepage-section-subtitle' with home_sec_name %}
+<div class="carousel__navigation" style="width: auto;position: absolute; left:calc(100vw / 2 - 500px);">
+	<!-- Add Arrows -->
+	<button class="homepage-swiper-btn-prev carousel-button-prev">
+		<svg viewBox="0 0 18 18" data-reactid=".2akuon0ef4.1.2.0.0.1.0:$experiences_11.0.1.3.0.0.0.0"><path d="M13.703 16.293a1 1 0 1 1-1.415 1.414l-7.995-8a1 1 0 0 1 0-1.414l7.995-8a1 1 0 1 1 1.415 1.414L6.413 9l7.29 7.293z" data-reactid=".2akuon0ef4.1.2.0.0.1.0:$experiences_11.0.1.3.0.0.0.0.0"></path></svg>
+
+	</button>
+</div>
+<div class="carousel__navigation" style="width: auto;position: absolute; right:calc(100vw / 2 - 500px);">
+	<!-- Add Arrows -->
+	<button class="homepage-swiper-btn-next carousel-button-next">
+		<svg viewBox="0 0 18 18" style="float:left" data-reactid=".2cplo9u29s0.1.2.0.0.1.0:$experiences_5.0.1.3.2.0.0.0"><path d="M4.293 1.707A1 1 0 1 1 5.708.293l7.995 8a1 1 0 0 1 0 1.414l-7.995 8a1 1 0 1 1-1.415-1.414L11.583 9l-7.29-7.293z" data-reactid=".2cplo9u29s0.1.2.0.0.1.0:$experiences_5.0.1.3.2.0.0.0.0"></path></svg>
+	</button>
+	<!-- Add Pagination -->
+</div>
 <div class="swiper-container carousel carousel-section-product-grid" data-autoplay="{{ autoplay }}">
 	<div class="swiper-wrapper">
 		{% for product in collections[section.settings.section-products_grid].products %}
@@ -20,6 +37,7 @@
 
 	</div>
 
+{% comment %}
 	<div class="carousel__navigation">
 		<!-- Add Arrows -->
 		<div class="homepage-swiper-btn-next1 carousel-button-next">
@@ -32,11 +50,10 @@
 			<span class="icon icon--arrow-left"></span>
 		</div>
 	</div>
+{% endcomment %}
+
 </div>
 
-<script>
-
-</script>
 {% schema %}
 {
 "name": "Section Product Grid",

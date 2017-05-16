@@ -61,17 +61,17 @@
                     {% endif %}
                     <span class="product__price-point">       
                       <span class="product__price"><span class="money">{{ product.price | money }}</span></span><br>
-                    
-                      {% if settings.collection_product_badge == 'price'%}
-                        {% if product.compare_at_price_min > product.price %}
-                          <span class="product__compare-price"><span class="money">{{ product.compare_at_price_max | money }}</span></span>
-                        {% endif %}
-                      {% endif %}
+
+						{% if settings.collection_product_badge == 'price' and product.compare_at_price_min > product.price%}
+                              <span class="product__compare-price"><span class="money">{{ product.compare_at_price_max | money }}</span></span>
+						{% endif %}
                     </span>
-                    
-                    {% if settings.collection_product_badge == 'badge' and product.compare_at_price_min > product.price %}
-                      <span class="product__badge">{{ 'products.general.sale_badge_text' | t }}</span>
-                    {% endif %}
+
+					  {% if settings.collection_product_badge == 'badge' and product.compare_at_price_min > product.price %}
+                        <span class="product__badge" style="text-decoration:line-through;font-weight:300;color:#ffffff;">
+                          {% comment %}{{ 'products.general.sale_badge_text' | t }}{% endcomment %}
+							{{ product.compare_at_price_max | money }}</span>
+					  {% endif %}
                   </div>
 
 

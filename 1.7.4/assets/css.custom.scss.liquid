@@ -22,12 +22,12 @@ body{
   }
 }
 .section__subtitle{
+  margin: 40px auto;
   color: white;
   font-size: 32px;
   display: block;
   text-align: center;
   width: 50%;
-  margin: 0 auto 60px;
   background: #a2a2a2;
   border-radius: 32px;
   @media (max-width: 768px){
@@ -43,41 +43,6 @@ body{
   height: calc(100vw/12);
   line-height: calc(100vw/12) !important;
 }
-/*#shopify-section-featured-carouse_l {
-  .swiper-slide {
-    @media screen and (min-width: 1800px) {
-      width: 40% !important;
-    }
-    @media screen and (min-width: 1200px) and (max-width: 1799px){
-      width: 12.5% !important;
-    }
-    @media screen and (min-width:780px) and (max-width: 1199px){
-      //width: 25% !important;
-    }
-    @media screen and (max-width: 779px){
-      width: 50% !important;
-    }
-  }
-}*/
-
-//@media screen and (min-width: 1800px) {
-//  #shopify-section-featured-carouse_l {
-//    .swiper-slide {
-//      width: 10% !important;
-//    }
-//  }
-//}
-//@media screen and (min-width: 1200px) and (max-width: 1799px) {
-//  #shopify-section-featured-carouse_l {
-//    .swiper-slide {
-//      width: 20% !important;
-//    }
-//  }
-//}
-//
-//@media screen and (max-width: 1199px) {
-//  width: 50% !important;
-//}
 
 //apple
 .list-payments{
@@ -426,60 +391,6 @@ body{
   }
 }
 
-//sec2
-/*#shopify-section-offers-section_1{
-  //overflow: hidden;
-  .special-offer-container{
-    height: 40vh !important;
-    overflow: hidden;
-  //background: #ffdec2; //url({{ 'img_contact_banner.jpg' | asset_url }});
-  //background-size: cover;
-    .spesial-offer{
-      float: left;
-      //background-color: rgba(0,0,0,.5);
-      width: calc(50% - 15px) !important;
-      min-height: 40vh;
-      transition: linear .5s;
-      &:before{
-        content:'';
-        background-color: transparent;
-      }
-      &:hover {
-        opacity:1;
-        transition: linear .5s;
-        min-height: 60vh !important;
-      }
-      &.spesial-offer--one{
-        h3 {
-          background-color: rgba(64,90,110, 0.5);
-        }
-      }
-      &.spesial-offer--two{
-        float: right;
-        h3 {
-          background-color: rgba(216, 35, 127,1)
-        }
-        .spesial-offer__info:before{
-          margin-right: -30px;
-        }
-      }
-      h3{
-        color: white;
-        font-weight: 600;
-      }
-
-      //
-      //&.spesial-offer--two {
-      //  float: right !important;
-      //  @media (max-width: 760px) {
-      //    float: left !important;
-      //    width: 100%;
-      //  }
-      //}
-
-    }
-  }
-}*/
 #shopify-section-offers-section_1{
   .special-offer-container{
     margin-bottom: 50px;
@@ -649,39 +560,103 @@ body{
   }
 }
 
-//sec4 chris box
-#shopify-section-featured-carouse_1 {
-  .section__subtitle{
-    text-align: center;
-    margin: 100px auto 60px;
-  }
+//featured products section
+#shopify-section-1493949836511 {
+  width: 100%;
+  background:#ff6767;
+
   .carousel__navigation {
-    height: 360px;
-  }
-  svg{
-    margin-top: 0;
-    fill: #767676;
-    width: 24px;
-    display: block;
-    float: right;
-    &:hover{
-      fill: #ff9097;
-      //background: pink;
-      transition: 200ms;
+    height: calc(100% - 154px);
+    width: auto;
+    position: absolute;
+    background: white;
+    vertical-align: middle;
+    margin: 10px 0;
+    button {
+      margin:0;
+      svg {
+        margin-top: 0;
+        fill: #767676;
+        width: 24px;
+        display: block;
+        float: right;
+        &:hover {
+          fill: #ff9097;
+          //background: pink;
+          transition: 200ms;
+        }
+      }
+    }
+
+    &.carousel__navigation_left{
+      right: auto;
+      left: calc(100vw / 2 - 500px);
+    }
+    &.carousel__navigation_right{
+      left: auto;
+      right: calc(100vw / 2 - 500px);
     }
   }
+
+  .carousel--homepage {
+    width: 852px;
+    .grid--in-row {
+      //border: 1px solid red;
+    }
+  }
+
   .product {
-    .product__link:before {
-      background-color: #a9a9a9 !important;
+    box-shadow: 0px 0px 0px #d4d1d1;
+    padding: 40px 0;
+    margin: 10px 0;
+    background: white;
+    &:before{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      //background-color: #f06060;
+      opacity: 0;
+      z-index: 3;
+    }
+    &:hover{
+      box-shadow: 1px 4px 10px #d4d1d1;
+      padding: 30px 0;
+      translate: 300ms all ease-in-out;
+    }
+    &:hover:before{
+      opacity: .2;
     }
     .product__info > .product__title{
-      font-weight: 600;
+      font-weight: 500;
+      font-size: 12px;
+    }
+    .product__link{
+      margin-top: 20px;
+    }
+    .product__link:before{
+      background: transparent;
     }
   }
   //.product__link:hover ~ .product__info .product__title{
   //    background-color: #ff9097;
   //}
-
+  .swiper-slide > .product > .product__link{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  .swiper-slide-active{
+    //width: 300px !important;
+    .product > .product__link {
+      background-size: cover;
+      transform: rotate(-18deg);
+      transition: 600ms ease all;
+    }
+  }
   $arrow_size: 100%;
     .homepage-swiper-btn-prev {
       height: 100%;
@@ -716,71 +691,13 @@ body{
       }
     }
 }
-
-//sec5
-#shopify-section-chris{
-  .section-heading:before{
+#shopify-section-1493836890840{
+  .grid--in-row{
+    margin-bottom: 0px;
   }
 }
-
-//sec6
-/*#shopify-section-feature-collections_1{
-  .featured-collections {
-    margin-bottom: 0;
-    .wrapper {
-      max-width: 80%;
-      //border: solid 1px;
-      .grid {
-        .grid__item {
-          .featured-collections__list {
-
-            @media (max-width: 1537px) and (min-width: 770px){
-              .featured-collections__item{
-                width: 24% !important;
-              }
-            }
-            @media (max-width: 769px){
-              .featured-collections__item{
-                width: 96% !important;
-              }
-            }
-            .featured-collections__item {
-              //width: 25%;
-                height: 360px;
-                width: 24%;
-                position: relative;
-                float: left;
-                overflow: hidden;
-              .img-holder {
-                background: transparent;
-                overflow: hidden;
-                img {
-                  width: 100%;
-                  max-width: 100%;
-
-                  !*-moz-transition: all 3s;
-                  -webkit-transition: all 3s;
-                  transition: all 3s;*!
-                  &:hover {
-                    position: absolute;
-                    transition: all 3s;
-                    //transform: scale(2);
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}*/
-
 #shopify-section-feature-collections_1{
    .featured-collections{margin-bottom: 50px;}
-    .section__subtitle{
-      margin: 0 auto 0;
-    }
     .wrapper{
     max-width:80%;
     .featured-collections__item {
@@ -1018,90 +935,6 @@ body{
   }
 }
 
-//left right side - product des
-/*.template-product {
-  #container {
-    margin-top: 170px;
-    .parallax__back {
-      float: left;
-      width: 50%;
-      display: block;
-      position: relative;
-      height: calc(130vh - 175px);
-      overflow: hidden;
-      .slide {
-        !*height: 70vh;
-        margin-top: 15vh;
-        margin-bottom: 15vh;*!
-      }
-      .flexslider{
-        .flex-control-nav{
-          bottom: 0;
-          top: auto;
-          margin-top: auto;
-          margin-bottom: 0;
-          padding-top: 0;
-          width: 100%;
-          left: 0;
-          position: absolute;
-
-          !* right: 5px; *!
-          !* bottom: initial; *!
-          z-index: 2;
-          background: rgba(119, 106, 106, 0.65);
-          li{
-            float: left;
-            border: none;
-            margin: 0 5px;
-          }
-        }
-      }
-    }
-    .empty-div {
-      height: 0 !important;
-    }
-    .parallax__base {
-      &:after{
-        height:0 !important;
-      }
-      height:calc(130vh - 175px);
-      float: right;
-      display: block;
-      width: 50%;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      //height: 80vh;
-      //overflow: scroll;
-      .product-description-flex{
-        width:90%;
-        margin-left:5%;
-        //margin-left: auto;
-        .product {
-          text-align: left;
-          .product__desc {
-            .product__desc-content {
-              text-align: left;
-              padding: 20px;
-            }
-          }
-        }
-      }
-      .product__info {
-        .product__expense {
-          width: 100%;
-        }
-        .form-wrapper {
-          width: 100%;
-          margin: 0;
-        }
-      }
-      .hr--clear-inverse:after{
-        height: 0 !important;
-      }
-
-    }
-  }
-}*/
 
 //for mobile only
 
@@ -1261,11 +1094,9 @@ body{
           }
           .has-dropdown--tertiary{
             .nav-list__dropdown{
-              //width: auto;
-
-              //min-width: 800px;
-              width: 1020px;
-              max-width: 1020px; //need
+              width: 1000px;
+              max-width: 1000px; //need
+              padding: 40px 6px;
               .nav-list__item{
                 width: 100%;
                 max-width:300px;
@@ -1373,7 +1204,7 @@ body{
 }*/
 
 //nav_collection_svg_img
-#shopify-section-header > header > div.drawer.drawer--menu.close > div > ul > li.nav-list__item.has-dropdown.has-dropdown--tertiary.nav-list__item--mega > ul {
+#main-nav > div.drawer__wrapper > ul > li.nav-list__item.has-dropdown.has-dropdown--tertiary.nav-list__item--mega > ul {
   & > li:nth-child(1) > a > div> div{
     background-image: url('data:image/svg+xml;utf8,<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
     <defs><style>.cls-1{fill:#d3d3d3;}.cls-2,.cls-6{fill:#fff;}.cls-3{fill:#eebbc4;}.cls-4{fill:none;stroke:#cc5867;stroke-miterlimit:10;}.cls-5{fill:#cc5867;}.cls-6{font-size:43.41px;font-family:Chalkboard SE;}.cls-7{letter-spacing:-3px;}</style></defs><title>Icons_Snackoo</title><path class="cls-1" d="M183.31,187.62H19.6a3.45,3.45,0,0,1-3.45-3.3L10.61,61.4a3.45,3.45,0,0,1,3.45-3.61H188.85a3.45,3.45,0,0,1,3.45,3.61l-5.54,122.92A3.45,3.45,0,0,1,183.31,187.62Z"/><path class="cls-2" d="M20.56,123.4l6.76-.19c4.3-.08,10.44-0.28,17.81-0.37s16-.27,25.19-0.31l28.87-.13,28.87,0.13c9.21,0,17.81.22,25.19,0.3s13.51,0.29,17.81.37l6.76,0.19-6.76.19c-4.3.08-10.44,0.28-17.81,0.37s-16,.27-25.19.3l-28.87.13-28.87-.13c-9.21,0-17.81-.22-25.19-0.31s-13.51-.29-17.81-0.37Z"/><path class="cls-2" d="M104,73.08L104.26,91c0.07,5.37.15,11.64,0.18,18.35s0.09,13.88.13,21c0,3.58.08,7.16,0.12,10.69s0.09,7,.06,10.35-0.14,6.6-.29,9.67l-0.21,4.48L104,169.75c-0.16,2.68-.36,5.14-0.54,7.32s-0.37,4.08-.54,5.64c-0.33,3.13-.59,4.91-0.59,4.91h-0.4s-0.21-1.79-.44-4.93c-0.12-1.57-.25-3.47-0.37-5.66s-0.24-4.65-.32-7.33l-0.13-4.19L100.58,161c-0.06-3.08-.05-6.32,0-9.68s0.2-6.82.36-10.34l0.43-10.68,0.75-21c0.22-6.71.49-13,.72-18.34l0.78-17.89H104Z"/><path class="cls-2" d="M183.42,186.74l-1.3-64.51c-0.16-8.06-.35-16.13-0.45-23.69,0-3.78-.13-7.43-0.14-10.9s0-6.74-.06-9.77c0-12.1,0-20.17,0-20.17h0.1s0.34,8.06.65,20.16l0.23,9.76c0.09,3.46.11,7.12,0.18,10.9,0.13,7.56.18,15.62,0.25,23.69l0.6,64.52h-0.1Z"/><path class="cls-2" d="M14.52,58.6l1.3,64.51c0.16,8.06.35,16.13,0.45,23.69,0,3.78.13,7.43,0.14,10.9s0,6.74.06,9.77c0,12.1,0,20.17,0,20.17h-0.1s-0.34-8.06-.65-20.16l-0.23-9.76c-0.09-3.46-.11-7.12-0.18-10.9-0.13-7.56-.18-15.62-0.25-23.69L14.42,58.6h0.1Z"/><line class="cls-3" x1="27.81" y1="59.52" x2="181.12" y2="65.2"/><path class="cls-2" d="M27.82,59.42l24,0.64,52.72,1.5,28.16,0.8c4.49,0.2,8.83.33,12.95,0.56l11.6,0.6c3.59,0.18,6.88.41,9.8,0.58s5.46,0.34,7.55.5c4.19,0.29,6.58.5,6.58,0.5v0.2s-2.4,0-6.6,0c-2.1,0-4.65,0-7.57-.06s-6.22-.05-9.81-0.14l-11.61-.26c-4.12-.08-8.46-0.26-13-0.4l-28.14-1.28-52.68-2.4L27.81,59.62v-0.2Z"/><rect class="cls-4" x="119.8" y="16.08" width="17.6" height="46.34" transform="translate(98.29 -91.74) rotate(60)"/><path class="cls-5" d="M111.26,41q-3.25,4.64-6.57,9.23c-2.21,3.06-4.38,6.15-6.62,9.19l-0.31.42-0.44-.32L86,51.29l-5.65-4.13L74.73,43,52.28,26.26l-0.8-.6,0.61-.8,13.7-18,0.55-.72L67,6.64c3.71,2.83,7.45,5.63,11.14,8.49L89.24,23.7,94.78,28l5.5,4.33C103.95,35.21,107.62,38.1,111.26,41Zm0,0c-3.83-2.68-7.61-5.41-11.41-8.13l-5.69-4.09-5.65-4.13L77.2,16.42C73.43,13.67,69.71,10.85,66,8.07l1.25-.18L53.68,26.06l-0.2-1.4L75.78,41.6l5.57,4.24,5.54,4.29L98,58.7l-0.75.11c2.3-3,4.67-5.94,7-8.91S108.89,44,111.26,41Z"/><path class="cls-5" d="M18.76,185.81L190.77,59a1,1,0,0,1,1.6.85l-3.25,72a1,1,0,0,1-.37.74L121.2,187.4a1,1,0,0,1-.63.22H19.35A1,1,0,0,1,18.76,185.81Z"/><text class="cls-6" transform="translate(111.83 176.38) rotate(-37.77)">B<tspan class="cls-7" x="23.89" y="0">O</tspan><tspan x="51.9" y="0">X</tspan></text></svg>');
@@ -1549,26 +1380,6 @@ footer {
 }
 
 
-.product::before{
-  content: '';
-  visibility: hidden;
-}
-
-/*.carousel-section-product-grid {
-  .product:hover::before {
-    content:"add to bag";
-    visibility: visible;
-    position: absolute;
-    background: red;
-    opacity: 0.8;
-    font-size: 20px;
-    height:100%;
-    width: 100%;
-    left:0;
-    top:0;
-    z-index: 10;
-  }
-}*/
 
 .carousel-section-product-grid {
 
@@ -1625,4 +1436,96 @@ footer {
     color:black;
   }
 
+}
+//slider thumb
+.flexslider-thumb--homepage{
+  margin-top: 0 !important;
+  overflow: hidden;
+  .slides{
+    .slide{
+      height: 500px;
+    }
+  }
+  .flex-control-thumbs{
+    overflow: visible;
+    display: block;
+    top: -600px;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    position: absolute;
+    /* bottom: initial; */
+    z-index: 2;
+    left: 50%;
+    transform: translatex(-50%);
+    li {
+      border-color: transparent;
+      border-radius: 0;
+      height: 300px;
+      top: -70px;
+      left: 0;
+      z-index: 100;
+      background: white;
+      transform: rotate(20deg);
+      transition: all 100ms ease-in-out;
+      transform-origin: 20% 40%;
+
+      -webkit-transition-delay: 0s;
+      -moz-transition-delay: 0s;
+      -ms-transition-delay: 0s;
+      -o-transition-delay: 0s;
+      transition-delay: .3s;
+      &:hover {
+        cursor: pointer;
+        top: -100px;
+        left: 20px;
+        transition: all 200ms ease-in-out;
+
+      }
+    }
+
+  }
+}
+
+//sold out style
+.product .product--sold-out:before {
+  transform: translate3d(10%, -74%, 0) rotate(-10deg);
+}
+
+//
+.featured-collections__item:nth-child(1) > .item__link > .img-holder{
+  background-image: url(http://media.istockphoto.com/vectors/watercolor-circle-hand-paint-on-white-background-vector-id475465854);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -19px;
+}
+.featured-collections__item:nth-child(2) > .item__link > .img-holder{
+  background-image: url(http://media.istockphoto.com/vectors/watercolor-circle-hand-paint-on-white-background-vector-id469825972);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -8px;
+}
+.featured-collections__item:nth-child(3) > .item__link > .img-holder{
+  background-image: url(http://media.istockphoto.com/vectors/watercolor-circle-hand-paint-on-white-background-vector-id469825966);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -32px;
+}
+.featured-collections__item > .item__link > .img-holder > img {
+  width: 185px;
+}
+//
+section.section--special-offer{
+  margin-bottom: 0;
+  .product.product--lg.product--full{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    .image-wrapper{
+      width: 75%;
+    }
+    .product__info{
+      width: 25%;
+    }
+  }
 }

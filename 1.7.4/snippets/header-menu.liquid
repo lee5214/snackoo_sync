@@ -13,11 +13,12 @@
 		margin: 0 auto;
 	}
 	.logo-container{
-		position: relative;
+		position: absolute;
 		height: 100%;
-		float: left;
+		left:0;
 		width:200px;
 		padding: 0;
+		z-index:101;
 	}
 	.site-logo{
 		display: block;
@@ -29,7 +30,7 @@
 	.nav-list{
 		float: left;
 		//width: 100%!important;
-		text-align: left;
+		text-align: center;
 	}
 	.nav-list .nav-list__link{
 		font-size: 16px;
@@ -166,8 +167,11 @@
 										<li class="nav-list__item nav-list__item--add">
 											<a class="nav-list__link" href="{{ collection_menu.url }}">
 												<div class="img-holder img-holder--block nav-list__image">
+													<div style="height: 100px;width: 100px; margin: 0 auto;"></div>
+													{% comment %}
+													nav collection img holder replaced by svg bg
 													<img src="{{ collection_menu.image.src | img_url: 'small' }}" alt="">
-												</div>
+													{% endcomment %}</div>
 												<h3 class="nav-list__title">{{ collection_menu.title }}</h3>
 												<p class="nav-list__desc">{{ collection_menu.description | truncatewords: 25 }}</p>
 											</a>
@@ -223,32 +227,6 @@
 
 			{% endfor %}
 
-			<!-- Menu search  -->
-			<li class="nav-list__item nav-list__item--search has-dropdown">
-				<a class="nav-list__link" href="/search">{{ 'layout.search.heading' | t }}</a>
-				<span class="icon--plus-small js-collapse"></span>
-				<!-- Secondary menu level -->
-				<ul class="nav-list__dropdown">
-					<li class="nav-list__item">
-						<div class="form-wrapper">
-							<form action="/search" method="GET" class="form form--inverse" role="search">
-								{% if settings.search_type == 'products' %}
-									<input type="hidden" name="type" value="product" />
-								{% endif %}
-								<div class="form__row">
-									<input type="text" name="q" class="form__field" placeholder="{{ 'layout.search.placeholder' | t }}" autocomplete="off">
-								</div>
-								<div class="form__row form__row--submit">
-									<input type="submit" class="btn btn--submit" value="{{ 'layout.search.button' | t }}">
-								</div>
-							</form>
-						</div>
-					</li>
-				</ul>
-				<!-- end secondary menu level -->
-			</li>
-			<!-- End menu search -->
-
 			{% if settings.show_multiple_currencies == true %}
 				<li class="nav-list__item nav-list__item--currency">
 					<a class="nav-list__link" href="javascript:void(0);">{{ 'layout.menu.currency' | t }}</a>
@@ -260,7 +238,7 @@
 			{% endif %}
 
 			<li class="nav-list__item nav-list__item--divider"></li>
-
+{% comment %}
 			{% if shop.customer_accounts_enabled %}
 
 				{% if customer %}
@@ -395,11 +373,60 @@
 					</li>
 				{% endif %}
 			{% endif %}
-		</ul>
+{% endcomment %}
+
+
+
+{% comment %}
+			test
+			<li class="nav-list__item has-dropdown">
+				<a class="nav-list__link" href="/brands">{{ 'layout.menu.brands_menu' | t }}</a>
+				<span class="icon--plus-small js-collapse"></span>
+				<!-- Secondary menu level -->
+				<ul class="nav-list__dropdown nav-list__dropdown--secondary">
+					<li class="nav-list__item">
+						<a class="nav-list__link" href="/brands">A</a>
+					</li>
+					<li class="nav-list__item">
+						<a class="nav-list__link" href="/brands" title="">B</a>
+					</li>
+				</ul>
+			</li>
+{% endcomment %}
+
+
 		{% if settings.search_header_type == 'expanded' %}
 			{% include '_header[search-expanded]' %}
 		{% else %}
 			{% include '_header[search-compact]' %}
 		{% endif %}
+
+			<!-- Menu search  -->
+			<li class="nav-list__item nav-list__item--search has-dropdown">
+				<a class="nav-list__link" href="/search">{{ 'layout.search.heading' | t }}</a>
+				<span class="icon--plus-small js-collapse"></span>
+				<!-- Secondary menu level -->
+				<ul class="nav-list__dropdown">
+					<li class="nav-list__item">
+						<div class="form-wrapper">
+							<form action="/search" method="GET" class="form form--inverse" role="search">
+								{% if settings.search_type == 'products' %}
+									<input type="hidden" name="type" value="product" />
+								{% endif %}
+								<div class="form__row">
+									<input type="text" name="q" class="form__field" placeholder="{{ 'layout.search.placeholder' | t }}" autocomplete="off">
+								</div>
+								<div class="form__row form__row--submit">
+									<input type="submit" class="btn btn--submit" value="{{ 'layout.search.button' | t }}">
+								</div>
+							</form>
+						</div>
+					</li>
+				</ul>
+				<!-- end secondary menu level -->
+			</li>
+			<!-- End menu search -->
+		</ul>
+
 	</div> <!-- end drawer__wrapper -->
 </div> <!-- end drawer -->

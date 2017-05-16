@@ -2,10 +2,10 @@
   {
     "name": "theme_info",
     "theme_name": "Cong",
-    "theme_author": "",
+    "theme_author": "Cong",
     "theme_version": "1.7.4",
     "theme_support_url": "https:\/\/lee5214.com\/",
-    "theme_documentation_url": ""
+    "theme_documentation_url": "https:\/\/lee5214.com\/"
   },
   {
     "name": "Colors",
@@ -1668,6 +1668,7 @@
         "type": "radio",
         "id": "search_type",
         "label": "Search results",
+        "search_header_type": "expanded",
         "options": [
           {
             "value": "all",
@@ -2078,6 +2079,45 @@
         "placeholder": "style.css for instance",
         "label": "Custom CSS File name here 👇",
         "info": "Download your custom CSS file from admin panel [Settings\/Files](http:\/\/www.shopify.com\/admin\/settings\/files) and type file name above"
+      }
+    ]
+  },
+  {
+    "name": "nav_brands_3in1",
+    "settings": [
+      {
+        "type": "header",
+        "content": "brands_3in1"
+      },
+      {
+        "type": "image_picker",
+        "id": "nav_brand1",
+        "label": "Custom brands"
+      },
+      {
+        "type": "image_picker",
+        "id": "nav_brand2",
+        "label": "Custom brands"
+      },
+      {
+        "type": "image_picker",
+        "id": "nav_brand3",
+        "label": "Custom brands"
+      },
+      {
+        "type": "image_picker",
+        "id": "nav_brand4",
+        "label": "Custom brands"
+      },
+      {
+        "type": "image_picker",
+        "id": "nav_brand5",
+        "label": "Custom brands"
+      },
+      {
+        "type": "image_picker",
+        "id": "nav_brand6",
+        "label": "Custom brands"
       }
     ]
   }
