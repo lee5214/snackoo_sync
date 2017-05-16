@@ -26,7 +26,7 @@
       <div class="instagram-feed" id="instafeed"></div>
     </div>
   
-  {% elsif section.settings.foter_above == 'subscribe_form' %}
+  {% if section.settings.foter_above == 'subscribe_form' %}
     <div class="subscribe-form subscribe-form--footer">
       <h2 class="heading--page">{{ section.settings.subscribe_heading | upcase }}</h2>
       <h4 class="subheading--page-small"><em>{{ section.settings.subscribe_subheading }}</em></h4>
@@ -68,7 +68,34 @@
       
       {% for block in section.blocks %}
         {% case block.type %}
-      
+		  {% when 'help' %}
+		  {% comment %}
+        help
+		  {% endcomment %}
+        <div class="grid__item {{ footer_column_width }} footer__item footer__item--contact {% if settings.footer_show_methods_of_payment %}footer__item--contact-half{% endif %}" {{ block.shopify_attributes }}>
+			{% if block.settings.help_text != blank %}
+              <h4 class="heading--add-small">{{ block.settings.title | upcase }}</h4>
+              <div>{{ block.settings.help_text }}</div>
+			{% endif %}
+        </div>
+        <!--   -->
+
+		  {% when 'subscription' %}
+        <div class="grid__item {{ footer_column_width }} footer__item footer__item--contact subscribe-form subscribe-form--footer">
+          <h4 class="heading--add-small">{{ block.settings.title | upcase }}</h4>
+
+          <div class="subscribe-form subscribe-form--footer">
+			  {% comment %}
+            Snippet for MailChimp subscribe form
+            For setting go to Admin -> Theme -> Customize Theme -> Homepage
+			  {% endcomment %}
+			  {% include 'subscribe-form-mailchimp' %}
+          </div>
+          <em>{{ block.settings.sub_title }}</em>
+
+        </div>
+
+        <!--   -->
           {% when 'address' %}
       		{% comment %}
             Contact information.
