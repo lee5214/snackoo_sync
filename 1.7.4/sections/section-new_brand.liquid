@@ -44,8 +44,9 @@
 
 
 	<!-- Flexslider -->
-	<span class="section__subtitle">{{ section.settings.sec_subtitle2}}</span>
-	<div class="flexslider flexslider-thumb flexslider-thumb--brands" data-autoplay="{{- autoplay -}}" data-autoplay-speed="{{- autoplaySpeed -}}" data-slideshow-effect="{{- slideshow_effect -}}">
+{% assign home_sec_name = 'Top Brands' %}
+{% include 'homepage-section-subtitle' with home_sec_name %}
+<div class="flexslider flexslider-thumb flexslider-thumb--brands" data-autoplay="{{- autoplay -}}" data-autoplay-speed="{{- autoplaySpeed -}}" data-slideshow-effect="{{- slideshow_effect -}}">
 		<ul class="slides">
 			{% for block in section.blocks %}
 				{% capture slide_img %}{{ block.settings.image | img_url: '2000x' | format: 'jpg' }}{% endcapture %}

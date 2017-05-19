@@ -1,21 +1,5 @@
 {
   "current": {
-    "checkout_header_image": "",
-    "checkout_logo_image": "",
-    "checkout_logo_position": "center",
-    "checkout_logo_size": "large",
-    "checkout_body_background_image": "",
-    "checkout_body_background_color": "#f4f5f5",
-    "checkout_input_background_color_mode": "white",
-    "checkout_sidebar_background_image": "",
-    "checkout_sidebar_background_color": "#fafafa",
-    "checkout_heading_font": "Lora",
-    "checkout_body_font": "Raleway",
-    "checkout_accent_color": "#f06060",
-    "checkout_button_color": "#f06060",
-    "checkout_error_color": "#fa9696",
-    "bg_image_choice": "",
-    "bg_image_display": "bg_image_title",
     "color_body_bg": "#ffffff",
     "color_primary": "#5c4b51",
     "color_highlight": "#f06060",
@@ -25,6 +9,8 @@
     "color_body_text": "#5c4b51",
     "color_headers": "#5c4b51",
     "color_add_headers": "#ada2a4",
+    "bg_image_choice": "",
+    "bg_image_display": "bg_image_title",
     "font_body_family": "Google_Raleway_300,400,600,800_sans",
     "font_body_size": "16px",
     "font_header_page_family": "Google_Raleway_300,400,600,800_sans",
@@ -33,27 +19,45 @@
     "font_header_size": "32px",
     "font_additional_family": "Google_Bitter_400,400italic,700_serif",
     "font_accent_family": "Google_Alex+Brush",
-    "favicon_enable": false,
-    "favicon": "",
-    "product_share_btns_heading": "",
-    "product_share_btns_facebook": true,
-    "product_share_btns_twitter": true,
-    "product_share_btns_pinterest": true,
-    "product_share_btns_google_p": true,
-    "product_share_btns_fancy": true,
+    "logo_use_image": true,
+    "logo": "shopify:\/\/shop_images\/snackoo_logo_92b1ae31-b7ca-4417-a635-c4c7524b5ff3.png",
+    "header_mobile_logo_disable": false,
+    "header_store_description_left": "",
+    "header_store_description_right": "",
+    "favicon_enable": true,
+    "favicon": "shopify:\/\/shop_images\/snackoo_logo_simple.png",
+    "popup_enable": true,
+    "popup_bg": "",
+    "popup_heading": "A Spring Preview Surprise",
+    "popup_discount_offer": "40% off",
+    "popup_discount_code": "foodlysurprise",
+    "popup_discount_info": "use the code above for spring<br>collection purchase",
+    "popup_link": "",
+    "popup_link_text": "",
+    "popup_days": "30",
+    "product_size_unit_enable": true,
     "product_description_enable": true,
     "product_nutritional_enable": true,
     "product_nutritional_energy": "Nutritional value",
     "product_nutritional_vitamins": "Vitamins:",
     "product_nutritional_minerals": "Minerals:",
     "product_reviews_recipe": "recipe",
-    "product_recipe_blog": "recipes",
+    "product_recipe_blog": "",
     "product_recipe_blog_ingredients": "Ingredients",
     "product_recipe_blog_directions": "Directions",
     "product_similar_enable": true,
     "product_similar_number": "4",
     "product_similar_type": "collection",
+    "product_share_btns_heading": "",
+    "product_share_btns_facebook": true,
+    "product_share_btns_twitter": true,
+    "product_share_btns_pinterest": true,
+    "product_share_btns_google_p": true,
+    "product_share_btns_fancy": true,
     "cart_special_sku": "0001",
+    "about_us_heading": "",
+    "about_us_subheading_overlap": "",
+    "about_us_blog": "",
     "social_facebook_link": "https:\/\/www.facebook.com\/olia.gozha",
     "social_twitter_link": "https:\/\/twitter.com\/OliaGozha",
     "social_pinterest_link": "https:\/\/www.pinterest.com\/oliagozha",
@@ -62,10 +66,8 @@
     "social_tumblr_link": "http:\/\/shopify.tumblr.com\/",
     "footer_instagram_user_id": "2370024929",
     "footer_instagram_access_token": "2370024929.1677ed0.056c20bda84046fba0ce07adec192171",
-    "footer_instagram_client": "ba61a580286a4ae9a340f12c709c6bb2",
-    "footer_instagram_account": "foodlystore",
-    "collection_grid_product_number": "12",
-    "collection_list_product_number": "11",
+    "collection_grid_product_number": "48",
+    "collection_list_product_number": "48",
     "collection_product_badge": "badge",
     "collection_add_cart_thumb": true,
     "collection_for_sorting_enable": false,
@@ -81,11 +83,9 @@
     "article_share_btns_google_p": true,
     "article_share_btns_fancy": true,
     "article_image_license_enable": true,
-    "blog_recipes": "recipes",
+    "blog_recipes": "",
     "blog_page_transition": false,
     "blog_sorting_enable": true,
-    "blog_sorting_api_key": "",
-    "blog_sorting_api_password": "",
     "blog_article_per_page": "5",
     "contact_banner_enable": true,
     "contact_heading_em": "Our",
@@ -96,6 +96,7 @@
     "contact_short_email": "contact@foodly.com",
     "contact_short_phone_enable": true,
     "contact_short_phone": "912-823-5448",
+    "contact_google_api": "",
     "contact_block1_enable": true,
     "contact_block1": "Foodly Inc<br>\r\n10 Brandt Street <br>\r\nSteinbach<br> \r\nManitoba, R5G 1Y2<br>\r\nCanada",
     "contact_block1_lat": "49.531",
@@ -120,7 +121,9 @@
     "search_fallback_link": "\/collections",
     "search_ajax_enable": true,
     "search_result_amount": "12",
-    "lookbook_blog": "",
+    "search_sr_google_speech_api_key": "",
+    "search_sr_captcha_api_key": "",
+    "lookbook_blog_post": "",
     "lookbook_heading": "Full plate lookbook",
     "lookbook_subheading": "each day we present one featured meal collecting all neccesary products for you to cook it at home",
     "lookbook_subheading_overlap": "The",
@@ -135,11 +138,11 @@
     "landing_benefit_section_enable": true,
     "landing_benefit_section_heading": "The benefits you gain",
     "landing_benefit_section_overlap": "Know",
-    "landing_benefit_blog": "packs-benefits",
+    "landing_benefit_blog": "",
     "landing_reviews_section_enable": true,
     "landing_reviews_section_heading": "on chef’s opinion",
     "landing_reviews_section_overlap": "Rely",
-    "landing_reviews_blog": "reviews",
+    "landing_reviews_blog": "",
     "landing_cta_section_enable": true,
     "landing_cta_section_heading": "Hurry! Sale endes soon",
     "landing_cta_section_subheading": "Limited offer of three popular bundles",
@@ -160,15 +163,44 @@
     "shipping_calculator_default_country": "United States",
     "shipping_calculator_submit_button_label": "Calculate shipping",
     "shipping_calculator_submit_button_label_disabled": "Calculating...",
-    "show_multiple_currencies": true,
+    "show_multiple_currencies": false,
     "currency_format": "money_format",
     "supported_currencies": "GBP CAD USD AUD EUR",
+    "default_currency": "",
+    "custom_css": "",
+    "custom_css_file": "",
+    "nav_brand1": "shopify:\/\/shop_images\/1_grande_7c6ba9cd-28c3-4d62-892f-5bf2aa26f739.png",
+    "nav_brand2": "shopify:\/\/shop_images\/1_grande_0add1523-6430-43f5-bab3-08283728b519.png",
+    "nav_brand3": "shopify:\/\/shop_images\/1_grande_4792518f-44e4-4b6d-92ff-35370a76f389.png",
+    "nav_brand4": "shopify:\/\/shop_images\/1_grande_9c887a20-765d-4f93-be1e-2cb1e611a07f.png",
+    "nav_brand5": "shopify:\/\/shop_images\/33_grande_bf750cda-25a6-46c6-b297-a2a8b748aacb.png",
+    "nav_brand6": "shopify:\/\/shop_images\/00000__65851.1459823754.1280.1280_grande_7d85786b-3433-45b3-838c-d185e38498fa.jpg",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#f4f5f5",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Lora",
+    "checkout_body_font": "Raleway",
+    "checkout_accent_color": "#f06060",
+    "checkout_button_color": "#f06060",
+    "checkout_error_color": "#fa9696",
+    "nav_brand": "shopify:\/\/shop_images\/1_grande_c09d2c7c-ab4d-4b98-8de6-16bfe1a817fc.png",
+    "footer_instagram_client": "ba61a580286a4ae9a340f12c709c6bb2",
+    "footer_instagram_account": "foodlystore",
+    "blog_sorting_api_key": "",
+    "blog_sorting_api_password": "",
+    "lookbook_blog": "",
     "checkout_use_header_image": true,
     "checkout_logo": "checkout_logo.png",
     "checkout_use_body_background_image": false,
     "checkout_use_sidebar_background_image": false,
-    "footer_subscribe_heading": "Get notified",
-    "footer_subscribe_subheading": "joining newsletter from Foodly to get the latest news and offers",
+    "footer_subscribe_heading": "Want some inbox love from Snackoo?",
+    "footer_subscribe_subheading": "subscribe to our newsletters now and stay up-to-date with new products, collections, and exclusive offers.",
     "hero_image_enable": false,
     "hero_image_title": "Real Food Projects",
     "hero_image_desc": "Featuring 30 Skills and 47 Recipes from Scratch, this book will change the way you cook.",
@@ -223,10 +255,7 @@
     "homepage_featured_enable": true,
     "homepage_featured_collection": "fresh",
     "homepage_featured_auplay": "",
-    "logo_use_image": true,
     "mobile_logo_enable": false,
-    "header_store_description_left": "Organic food by Whytes'",
-    "header_store_description_right": "from Manitoba, Canada",
     "main_menu_collection_enable": true,
     "main_menu_collections": "fresh,frozen,dried,liquid",
     "fixed_bar_enable": true,
@@ -325,7 +354,7 @@
             "type": "menu",
             "settings": {
               "title": "Foodly Family",
-              "linklist": "footer-additional"
+              "linklist": ""
             }
           },
           "1477739219825": {
@@ -363,112 +392,20 @@
       "header": {
         "type": "header",
         "settings": {
-          "collection_link": "goods",
+          "fixed_header": false,
+          "collection_link": "collections",
           "main_menu_collection_enable": true,
-          "main_menu_collections": "fresh,frozen,dried,liquid",
+          "main_menu_collections": "snackoo-box,Popular-Products,Healthy-Options,Student-Discount",
           "fixed_bar_enable": true,
           "fixed_bar_search_enable": true,
-          "fixed_bar_links": ""
-        }
-      },
-      "1477743048613": {
-        "type": "featured-carousel",
-        "settings": {
-          "featured_collection": "",
-          "autoplay": ""
-        }
-      },
-      "1477743502227": {
-        "type": "offers-product",
-        "settings": {
-          "product": "",
-          "custom_image_enable": true,
-          "img_special_product": "shopify:\/\/shop_images\/img_homepage_special_product.png",
-          "heading": "Special offer",
-          "subheading_overlap": "Fall"
-        }
-      },
-      "1477745352223": {
-        "type": "offers-section",
-        "blocks": {
-          "1477745788845": {
-            "type": "offer_section",
-            "settings": {
-              "img__special_offer_lg": "shopify:\/\/shop_images\/img_homepage_special_1.jpg",
-              "img__special_offer_xs": "shopify:\/\/shop_images\/img_homepage_special_mb_1.jpg",
-              "heading": "Start your day",
-              "subheading": "with vit-plate",
-              "mark_enable": true,
-              "color_mark": "#f3b562",
-              "color_mark_text": "#5c4b51",
-              "mark_title": "Healthy deal",
-              "mark_price": "special pack",
-              "btn_url": "shopify:\/\/collections\/apples"
-            }
-          },
-          "1477745429658": {
-            "type": "offer_section",
-            "settings": {
-              "img__special_offer_lg": "shopify:\/\/shop_images\/img_homepage_special_2.jpg",
-              "img__special_offer_xs": "shopify:\/\/shop_images\/img_homepage_special_mb_2.jpg",
-              "heading": "C-Overload",
-              "subheading": "",
-              "mark_enable": true,
-              "color_mark": "#8cbeb2",
-              "color_mark_text": "#ffffff",
-              "mark_title": "September deal",
-              "mark_price": "20% discount",
-              "btn_url": "shopify:\/\/products\/c-overload"
-            }
-          }
-        },
-        "block_order": [
-          "1477745788845",
-          "1477745429658"
-        ],
-        "settings": {}
-      },
-      "1477748103439": {
-        "type": "feedbacks",
-        "settings": {
-          "blog_with_feedbacks": "",
-          "heading": "Customer feedback",
-          "heading_overlap": "Happy"
-        }
-      },
-      "1477906775199": {
-        "type": "subscribe-form",
-        "settings": {
-          "heading_html": "Business<br> Values<br> Attitude",
-          "subheading": "Join folks at Foodly family to get the latest news and the best offers",
-          "subheading_overlap": "Family"
-        }
-      },
-      "1477907361972": {
-        "type": "slider-about-us",
-        "settings": {
-          "about_blog": "",
-          "heading": "Discover & origin",
-          "heading_overlap": "The"
+          "fixed_bar_links": "collections",
+          "transparent_home_enable": true,
+          "color_header_bg": "#ffffff"
         }
       },
       "1489396154366": {
         "type": "slideshow",
         "blocks": {
-          "1489396165126": {
-            "type": "slide",
-            "settings": {
-              "heading": "Tomato season",
-              "heading_add": "",
-              "subheading": "nutritious  delicious",
-              "subheading_add": "",
-              "link": "",
-              "price": "3.05",
-              "price_desc": "start point",
-              "image": "shopify:\/\/shop_images\/homepage_hero_01.jpg",
-              "image_thumb": "shopify:\/\/shop_images\/homepage_hero_thumb_01.jpg"
-            }
-          },
           "1489396213649": {
             "type": "slide",
             "settings": {
@@ -477,10 +414,26 @@
               "subheading": "you’ll need this sweet pepper for both",
               "subheading_add": "",
               "link": "",
-              "price": "6.95",
-              "price_desc": "start point",
-              "image": "shopify:\/\/shop_images\/homepage_hero_02.jpg",
-              "image_thumb": "shopify:\/\/shop_images\/homepage_hero_thumb_02.jpg"
+              "price": "",
+              "price_desc": "",
+              "price_bage_positionXY": "",
+              "image": "shopify:\/\/shop_images\/2-03_02906a52-7a86-435a-8746-0e7e5065aed4.png",
+              "image_thumb": "shopify:\/\/shop_images\/333-06_bd8f84c6-b4f8-48ce-8c36-50f41b3ac61b.png"
+            }
+          },
+          "1489396165126": {
+            "type": "slide",
+            "settings": {
+              "heading": "Tomato season",
+              "heading_add": "",
+              "subheading": "nutritious  delicious",
+              "subheading_add": "",
+              "link": "",
+              "price": "",
+              "price_desc": "",
+              "price_bage_positionXY": "",
+              "image": "shopify:\/\/shop_images\/ccc_-2-03_2e8854b3-3709-4b26-839b-6544e4872c82.png",
+              "image_thumb": "shopify:\/\/shop_images\/12-06_6d402584-5d9e-435e-a07f-ae4163dd7c07.png"
             }
           },
           "1489396243275": {
@@ -491,23 +444,25 @@
               "subheading": "of Gala Cultivar",
               "subheading_add": "Mmmmm...",
               "link": "",
-              "price": "3.05",
-              "price_desc": "start point",
-              "image": "shopify:\/\/shop_images\/homepage_hero_03.jpg",
-              "image_thumb": "shopify:\/\/shop_images\/homepage_hero_thumb_03.jpg"
+              "price": "",
+              "price_desc": "",
+              "price_bage_positionXY": "",
+              "image": "shopify:\/\/shop_images\/rrr_-2-03_b2b8b7fa-26a1-4d65-83cd-ccb75e9f6154.png",
+              "image_thumb": "shopify:\/\/shop_images\/06_de97a723-65bd-4983-8e0d-27b9e89a6ef8.png"
             }
           }
         },
         "block_order": [
-          "1489396165126",
           "1489396213649",
+          "1489396165126",
           "1489396243275"
         ],
         "settings": {
           "slideshow_effect": "fade",
           "slideshow_autoplay": false,
           "slideshow_time_animation": "7000",
-          "slideshow_zoom": true
+          "slideshow_zoom": true,
+          "position_y": "0"
         }
       },
       "products_grid": {
@@ -516,17 +471,181 @@
           "products_grid": "all",
           "autoplay": ""
         }
+      },
+      "1493836890840": {
+        "type": "section-products_grid",
+        "settings": {
+          "section-products_grid": "newest-products",
+          "autoplay": "",
+          "sec_subtitle": "New Products"
+        }
+      },
+      "1493842994633": {
+        "type": "section-new_brand",
+        "blocks": {
+          "1493843006754": {
+            "type": "slide",
+            "settings": {
+              "heading": "Glice rocks",
+              "heading_add": "Yes, <strong>Pocky<\/strong>!",
+              "subheading": "chocolate stickers",
+              "subheading_add": "Mmmmm...",
+              "link": "",
+              "price": "$3.05",
+              "price_desc": "per box",
+              "price_bage_positionXY": "50% 50%",
+              "image": "shopify:\/\/shop_images\/1_grande_0e6e452b-50b1-4244-8b43-8ea8cef1b0cb.png",
+              "image_thumb": "shopify:\/\/shop_images\/1_grande_16f5d47e-03a4-4ae2-9c79-9a488217b0f1.png"
+            }
+          },
+          "1493843264615": {
+            "type": "slide",
+            "settings": {
+              "heading": "Luo Shi Fen",
+              "heading_add": "<strong>Spicy but tasty<\/strong>!",
+              "subheading": "the top brand in China",
+              "subheading_add": "Mmmmm...",
+              "link": "",
+              "price": "$3.05",
+              "price_desc": "start point",
+              "price_bage_positionXY": "50% 50%",
+              "image": "shopify:\/\/shop_images\/1_2.png",
+              "image_thumb": "shopify:\/\/shop_images\/1_2_4cad75f2-58e7-4f44-9e46-6bb9d53d8aeb.png"
+            }
+          },
+          "1493937409048": {
+            "type": "slide",
+            "settings": {
+              "heading": "Tomato season",
+              "heading_add": "Yes, <strong>Please<\/strong>!",
+              "subheading": "nutritious  delicious",
+              "subheading_add": "Mmmmm...",
+              "link": "",
+              "price": "$3.05",
+              "price_desc": "start point",
+              "price_bage_positionXY": "50% 50%",
+              "image": "shopify:\/\/shop_images\/1_grande_4f2e02a9-81a5-4f72-a67e-0968d107f397.png",
+              "image_thumb": "shopify:\/\/shop_images\/1_grande_84dbd19a-883b-4db9-badf-d65889a8e8a3.png"
+            }
+          },
+          "1493937443826": {
+            "type": "slide",
+            "settings": {
+              "heading": "Tomato season",
+              "heading_add": "Yes, <strong>Please<\/strong>!",
+              "subheading": "nutritious  delicious",
+              "subheading_add": "Mmmmm...",
+              "link": "",
+              "price": "$3.05",
+              "price_desc": "start point",
+              "price_bage_positionXY": "50% 50%",
+              "image": "shopify:\/\/shop_images\/uha_grape_grande_f9df6fd8-2ff4-459c-befb-eee16db890f5.jpg",
+              "image_thumb": "shopify:\/\/shop_images\/uha_grape_grande_0ec3f6dc-eb92-42ea-b449-effcd81ff4af.jpg"
+            }
+          },
+          "1493939685243": {
+            "type": "slide",
+            "settings": {
+              "heading": "Tomato season",
+              "heading_add": "Yes, <strong>Please<\/strong>!",
+              "subheading": "nutritious  delicious",
+              "subheading_add": "Mmmmm...",
+              "link": "",
+              "price": "$3.05",
+              "price_desc": "start point",
+              "price_bage_positionXY": "50% 50%",
+              "image": "shopify:\/\/shop_images\/33_grande_2393f6a9-e34e-4a02-a8a8-7a8309032be9.png",
+              "image_thumb": "shopify:\/\/shop_images\/33_grande_8900ddec-8e2b-4eab-a781-3854c6b87d55.png"
+            }
+          },
+          "1493939686364": {
+            "type": "slide",
+            "settings": {
+              "heading": "Tomato season",
+              "heading_add": "Yes, <strong>Please<\/strong>!",
+              "subheading": "nutritious  delicious",
+              "subheading_add": "Mmmmm...",
+              "link": "",
+              "price": "$3.05",
+              "price_desc": "start point",
+              "price_bage_positionXY": "50% 50%",
+              "image": "shopify:\/\/shop_images\/1_grande_53964463-0808-4133-b9bc-03f5c70624d1.png",
+              "image_thumb": "shopify:\/\/shop_images\/1_grande_d2accbe5-8e42-4ffa-b7cd-583260fc8f52.png"
+            }
+          }
+        },
+        "block_order": [
+          "1493843006754",
+          "1493843264615",
+          "1493937409048",
+          "1493937443826",
+          "1493939685243",
+          "1493939686364"
+        ],
+        "settings": {
+          "sec_subtitle2": "Top Brands",
+          "section-new_brand": "fade",
+          "section-new_brand_autoplay": false,
+          "section-new_brand_time_animation": "7000",
+          "section-new_brand_zoom": true,
+          "position_y": "2"
+        }
+      },
+      "1493949836511": {
+        "type": "featured-carousel",
+        "settings": {
+          "featured_collection": "featured-products",
+          "autoplay": "0"
+        }
+      },
+      "1494024265503": {
+        "type": "feature-collections",
+        "blocks": {
+          "1494024265503-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "japanese"
+            }
+          },
+          "1494024265503-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "tea-time"
+            }
+          },
+          "1494024265503-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "live-naturally"
+            }
+          }
+        },
+        "block_order": [
+          "1494024265503-0",
+          "1494024265503-1",
+          "1494024265503-2"
+        ],
+        "settings": {}
+      },
+      "1494024345121": {
+        "type": "offers-product-02",
+        "settings": {
+          "product": "valentine-box"
+        }
+      },
+      "1494454622972": {
+        "type": "featured-products_card",
+        "settings": {}
       }
     },
     "content_for_index": [
       "1489396154366",
-      "1477745352223",
-      "1477743048613",
-      "1477743502227",
-      "1477907361972",
-      "1477906775199",
-      "1477748103439"
-
+      "1493836890840",
+      "1493949836511",
+      "1494024265503",
+      "1494024345121",
+      "1493842994633",
+      "1494454622972"
     ]
   }
 }

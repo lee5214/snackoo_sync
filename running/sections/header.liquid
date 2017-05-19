@@ -6,16 +6,7 @@
     Snippet for header with navigation and shopping cart
     For setting go to Admin -> Theme -> Customize Theme -> Header
     {% endcomment %}
-    <header class="header
-        {% if template == 'index' %}header--clear{% endif %}
-        {% if template == 'product' %}
-            {% if product.featured_image.size > 0 %} header--clear{% endif %}
-        {% endif %}
-        {% if current_page_title == 'landing-page' or template == 'cart' %} header--fixed-off{% endif %}"
-        {% if template == 'index' %}style="z-index: 5;"{% endif %}
-    >
-
-
+    <header class="header {% if template == 'index' %}header--clear{% endif %} {% if template == 'product' %}{% if product.featured_image.size > 0 %} header--clear{% endif %}{% endif %} {% if current_page_title == 'landing-page' or template == 'cart' %} header--fixed-off{% endif %}" {% if template == 'index' %}style="z-index: 5;"{% endif %}>
       <!-- Header search form -->
       <div class="search-container">
         <form action="/search" method="GET" class="form form--search-primary" role="search">
@@ -42,7 +33,7 @@
       <!-- Mobile logo -->
       {% if section.settings.logo_use_image and section.settings.mobile_logo_enable %}
         <a class="site-logo site-logo--mobile" href="/">
-          <img src="{{ section.settings.logo | img_url: 'small' | format: 'png' }}" alt="{{ shop.name }}">
+          <img src="{{ section.settings.logo | img_url: 'large' | format: 'png' }}" alt="{{ shop.name }}">
         </a>
       {% endif %}
       <!-- End Mobile logo -->
@@ -56,7 +47,7 @@
             <span></span>
             <span></span>
           </span>
-	<span class="fallback-text">{{ 'layout.menu.open_menu' | t }}</span>
+          <span class="fallback-text">{{ 'layout.menu.open_menu' | t }}</span>
         </button>
         <!-- End open menu button -->
         <!-- Store description -->

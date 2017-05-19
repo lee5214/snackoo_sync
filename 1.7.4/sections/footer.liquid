@@ -25,8 +25,11 @@
       <h4 class="subheading--page-small"><em>{{ section.settings.instagram_subheading }}</em></h4>
       <div class="instagram-feed" id="instafeed"></div>
     </div>
-  
-  {% if section.settings.foter_above == 'subscribe_form' %}
+  {% endif %}
+  <hr class="hr--clear">
+    {% comment %}
+    {% elsif section.settings.foter_above == 'subscribe_form' %}
+    {% endcomment %}
     <div class="subscribe-form subscribe-form--footer">
       <h2 class="heading--page">{{ section.settings.subscribe_heading | upcase }}</h2>
       <h4 class="subheading--page-small"><em>{{ section.settings.subscribe_subheading }}</em></h4>
@@ -44,9 +47,6 @@
         {% include 'subscribe-form-shopify'%}
       {% endif %}
     </div>
-  {% endif %}
-        
-  <hr class="hr--clear">
   
   {% comment %}
   Choose css grid for columns number

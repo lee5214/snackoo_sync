@@ -83,7 +83,7 @@
   {% endcomment %}
   <header class="header header--cart header--fixed-off">
     <div class="cart-continue-shop">
-      <a class="text-link--default cart-continue-shop__link" href="/collections" title="{{ 'cart.cart_page.continue_shopping' | t }}">
+      <a class="text-link--default cart-continue-shop__link" href="/collections/all" title="{{ 'cart.cart_page.continue_shopping' | t }}">
         <span class="icon icon--arrow-left"></span>
         {{ 'cart.cart_page.continue_shopping' | t }}
         <span class="text-clear">with Snackoo collections</span>  {% comment %} {{ 'cart.cart_page.within' | t }}</span> {% endcomment %}
@@ -153,7 +153,9 @@
                       </div>  
                       
                       <div class="cart-list__item--price">
-                        <span class="money">{{ item.price | money }}</span>
+                        <span class="money">
+<span class="saso-cart-item-price" data-key="{{item.key}}">{{ item.price | money }}</span>
+</span>
                       </div>
               
                       <div class="cart-list__item--remove">
@@ -180,7 +182,10 @@
                   <h3 class="heading--add-small">{{ 'cart.general.total' | t | upcase }}</h3>
                   
                   <span class="cart-total__amount">
-                    <span class="money">{{ cart.total_price | money }}</span>
+                    <span class="money">
+<span class="saso-cart-original-total">{{ cart.total_price | money }}</span>
+<span class="saso-cart-total"></span>
+</span>
                   </span>
                   
                   <a id="update-cart" class="update-cart" href="javascript:void(0);">

@@ -1668,7 +1668,6 @@
         "type": "radio",
         "id": "search_type",
         "label": "Search results",
-        "search_header_type": "expanded",
         "options": [
           {
             "value": "all",

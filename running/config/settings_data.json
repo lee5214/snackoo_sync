@@ -1,6 +1,6 @@
 {
   "current": {
-    "popup_enable": true,
+    "popup_enable": false,
     "popup_bg": "shopify:\/\/shop_images\/Untitled-1.jpg",
     "popup_heading": "Enjoy 10% off",
     "popup_discount_offer": "",
@@ -8,7 +8,7 @@
     "popup_discount_info": "on your current purchase when you sign up to receive Snackoo emails. Plus, you'll be the first to know about new arrivals, special offers, and exclusive events.",
     "popup_link": "",
     "popup_link_text": "",
-    "popup_days": "30",
+    "popup_days": "100",
     "bg_image_choice": "",
     "bg_image_display": "bg_image_title",
     "color_body_bg": "#ffffff",
@@ -29,7 +29,7 @@
     "font_additional_family": "Google_Raleway_300,400,600,800_sans",
     "font_accent_family": "Google_Raleway_300,400,600,800_sans",
     "favicon_enable": true,
-    "favicon": "shopify:\/\/shop_images\/snackoocom_BOX_DESIGN.png",
+    "favicon": "shopify:\/\/shop_images\/img_password_page_logo.png",
     "product_share_btns_heading": "",
     "product_share_btns_facebook": true,
     "product_share_btns_twitter": true,
@@ -64,7 +64,7 @@
     "collection_product_badge": "badge",
     "collection_add_cart_thumb": true,
     "collection_for_sorting_enable": true,
-    "collection_for_sorting": "All Collections, Popular Products, Healthy Options, Sale, Bundles",
+    "collection_for_sorting": "All Collections, Popular Products, Healthy Options",
     "collection_sort_tags_enable": true,
     "collection_sort_tags": "Price Ranges, All Prices, $1-$5, $5-$10, $10-$15, $15-$20, $20+",
     "collection_sort_default_enable": true,
@@ -335,7 +335,7 @@
             "type": "help",
             "settings": {
               "title": "Help",
-              "help_text": "<ul><li><i class='fa fa-envelope'><\/i><a href='mailto:info@snackoo.com'>info@snackoo.com<\/a><\/li><li><i class='fa fa-phone'><\/i><a href='https:\/\/snackooinc.myshopify.com\/pages\/contact'>Contact Us<\/a><\/li><li><i class='fa fa-search'><\/i><a href='https:\/\/snackooinc.myshopify.com\/search'>Search<\/a><\/li><\/ul>"
+              "help_text": "<ul>\r\n<li>\r\n<i class=\"fa fa-envelope\"><\/i><a href=\"mailto:info@snackoo.com\">info@snackoo.com<\/a>\r\n<\/li>\r\n<li>\r\n<i class=\"fa fa-phone\"><\/i><a href=\"https:\/\/snackooinc.myshopify.com\/pages\/contact\">Contact Us<\/a>\r\n<\/li>\r\n<li>\r\n<i class=\"fa fa-search\"><\/i><a href=\"https:\/\/snackooinc.myshopify.com\/search\">Search<\/a>\r\n<\/li>\r\n<\/ul>"
             }
           },
           "1477729345875": {
@@ -387,6 +387,20 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
+          "1492474107001": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2-03_61b9811b-a060-40bf-a32a-0e003fb7faf7.png",
+              "image_thumb": "shopify:\/\/shop_images\/111-06.png",
+              "link": "shopify:\/\/collections\/tokyo-banana",
+              "heading": "<h4>Tokyo Banana<\/h4>",
+              "subheading": "shop now",
+              "price": "",
+              "price_desc": "",
+              "heading_add": "",
+              "subheading_add": ""
+            }
+          },
           "1477737960076": {
             "type": "slide",
             "settings": {
@@ -435,35 +449,7 @@
               "image": "shopify:\/\/shop_images\/2-03_3a8ee13f-a903-40d5-b034-51a4009518fd.png",
               "image_thumb": "shopify:\/\/shop_images\/333-06.png",
               "link": "shopify:\/\/products\/tokyo-milk-cheese-factory-salt-camembert-cookies-10-pcs",
-              "heading": "<h4>Salt & Camembert Cookies<\/h4>",
-              "subheading": "shop now",
-              "price": "",
-              "price_desc": "",
-              "heading_add": "",
-              "subheading_add": ""
-            }
-          },
-          "1492474107001": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/2-03_61b9811b-a060-40bf-a32a-0e003fb7faf7.png",
-              "image_thumb": "shopify:\/\/shop_images\/111-06.png",
-              "link": "shopify:\/\/collections\/tokyo-banana",
-              "heading": "<h4>Tokyo Banana<\/h4>",
-              "subheading": "shop now",
-              "price": "",
-              "price_desc": "",
-              "heading_add": "",
-              "subheading_add": ""
-            }
-          },
-          "1492474194146": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/rrr_-2-03.png",
-              "image_thumb": "shopify:\/\/shop_images\/06.png",
-              "link": "shopify:\/\/products\/sugar-butter-sand-tree-7-pcs",
-              "heading": "<h4>Sugar Butter Sand Tree<\/h4>",
+              "heading": "<h4>Salt &amp; Camembert Cookies<\/h4>",
               "subheading": "shop now",
               "price": "",
               "price_desc": "",
@@ -473,12 +459,11 @@
           }
         },
         "block_order": [
+          "1492474107001",
           "1477737960076",
           "1489547106333",
           "1489026727915",
-          "1492473948551",
-          "1492474107001",
-          "1492474194146"
+          "1492473948551"
         ],
         "settings": {
           "slideshow_effect": "fade",
@@ -497,7 +482,7 @@
           "header_store_description_right": "<p style=\"font-size:18px;\">free shipping on $49+<\/p>",
           "collection_link": "collections",
           "main_menu_collection_enable": true,
-          "main_menu_collections": "snackoo-box,Popular-Products,Healthy-Options,Student-Discount",
+          "main_menu_collections": "snackoo-box,Popular-Products,Healthy-Options,sale",
           "fixed_bar_enable": true,
           "fixed_bar_search_enable": true,
           "fixed_bar_links": "collections"
@@ -596,13 +581,6 @@
         ],
         "settings": {}
       },
-      "featured-carouse_1": {
-        "type": "featured-carousel",
-        "settings": {
-          "featured_collection": "featured-products",
-          "autoplay": "4"
-        }
-      },
       "featured-carouse_2": {
         "type": "featured-carousel",
         "settings": {
@@ -621,6 +599,13 @@
         "type": "offers-product-02",
         "settings": {
           "product": "valentine-box"
+        }
+      },
+      "featured-carouse_1": {
+        "type": "featured-carousel",
+        "settings": {
+          "featured_collection": "featured-products",
+          "autoplay": "4"
         }
       }
     },

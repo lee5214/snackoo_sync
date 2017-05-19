@@ -641,13 +641,41 @@ body{
   }
 }
 
-//sec4 chris box
-#shopify-section-featured-carouse_1 {
-  .section__subtitle{
-    margin: 100px auto 60px;
+.carousel__navigation {
+  height: 360px;
+
+  $arrow_size: 100%;
+  .homepage-swiper-btn-prev,.homepage-swiper-btn-prev2 {
+    height: 100%;
+    width: auto;
+    float: right;
+    margin-right: 20px;
+    //margin: 60% 40%;
+    /*img {
+      background: rgba(144, 118, 38, 0.33);
+      //margin: 80px; //calc(50% - 100px) calc(50% - 100px);
+      height: $arrow_size;
+      width: $arrow_size;
+      &:hover {
+        background: rgba(144, 118, 38, 1);
+      }
+    }*/
   }
-  .carousel__navigation {
-    height: 360px;
+  .homepage-swiper-btn-next,.homepage-swiper-btn-next2 {
+    height: 100%;
+    width: auto;
+    float: left;
+    margin-left: 20px;
+    //margin: 60% 40%;
+    img {
+      background: rgba(144, 118, 38, 0.33);
+      //margin: 80px; //calc(50% - 100px) calc(50% - 100px);
+      height: $arrow_size;
+      width: $arrow_size;
+      &:hover {
+        background: rgba(144, 118, 38, 1);
+      }
+    }
   }
   svg{
     margin-top: 0;
@@ -660,6 +688,13 @@ body{
       //background: pink;
       transition: 200ms;
     }
+  }
+}
+
+//sec4 chris box
+#shopify-section-featured-carouse_1 {
+  .section__subtitle{
+    margin: 100px auto 60px;
   }
   .product {
     .product__link:before {
@@ -1544,4 +1579,17 @@ footer {
       }
 
     }
+}
+
+.template-collection{
+  //collection grid page prod card
+  .product .product__link {
+    box-shadow: 0px 0px 0px #bdbdbd;
+    &:hover{
+      box-shadow: 1px 1px 10px #bdbdbd;
+    }
+  }
+  .product__visuals .product__link:before {
+      background-color: transparent;
+  }
 }
