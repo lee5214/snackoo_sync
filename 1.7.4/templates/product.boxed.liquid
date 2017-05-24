@@ -13,7 +13,7 @@
 								{% if product.variants.size > 1 %}
 
 									{% assign image_urls = '' %}
-									{% for variant in product.variants limit: 6 %}
+									{% for variant in product.variants limit: 10 %}
 										<div class="swiper-slide" data-variant-id="{{ variant.id }}"
 											 data-slide-index="{{ forloop.index }}">
 											<div class="img-holder">
@@ -32,7 +32,7 @@
 								{% else %}
 
 									{% assign image_urls = '' %}
-									{% for image in product.images limit: 4 %}
+									{% for image in product.images limit: 10 %}
 										<div class="swiper-slide">
 											<div class="img-holder">
 												<img src="{{ image.src | product_img_url: '600x600' }}">
@@ -65,22 +65,8 @@
 						<div class="product__content">
                 <span class="product__spec">
                   {% include 'breadcrumbs' %}
-					{% comment %}
-					{% include 'uncomplicated.categories.catbread' %}
-					{% endcomment %}
-					{% comment %}
-					//created breadcrumbs.liquid
-					{{ product.type | link_to_type }}
-					{% if product.first_available_variant.inventory_quantity > 0 %}
-						{{ 'products.general.in_stock' | t }}
-					{% else %}
-						{{ 'products.general.out_stock' | t }}
-					{% endif %}
 
-					{{ product.first_available_variant.weight_unit }}
-
-					{% endcomment %}
-                  </span>
+			  	</span>
 
 							{% comment %}
 							<h1 itemprop="name" class="product__title">{{ product.title }}</h1>

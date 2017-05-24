@@ -72,7 +72,8 @@
                     {% if settings.collection_product_badge == 'badge' and product.compare_at_price_min > product.price %}
                       <span class="product__badge" style="text-decoration:line-through;font-weight:300;color: #ffffff;">
                           {% comment %}{{ 'products.general.sale_badge_text' | t }}{% endcomment %}
-                          {{ product.compare_at_price_max | money }}</span>
+                          {{ product.compare_at_price_max | money }}
+                      </span>
                     {% endif %}
                   </div>
 

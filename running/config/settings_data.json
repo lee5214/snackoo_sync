@@ -387,41 +387,13 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
-          "1492474107001": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/2-03_61b9811b-a060-40bf-a32a-0e003fb7faf7.png",
-              "image_thumb": "shopify:\/\/shop_images\/111-06.png",
-              "link": "shopify:\/\/collections\/tokyo-banana",
-              "heading": "<h4>Tokyo Banana<\/h4>",
-              "subheading": "shop now",
-              "price": "",
-              "price_desc": "",
-              "heading_add": "",
-              "subheading_add": ""
-            }
-          },
           "1477737960076": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/ccc_-2-03.png",
-              "image_thumb": "shopify:\/\/shop_images\/12-06.png",
-              "link": "shopify:\/\/collections\/pablo",
-              "heading": "<h4>Pablo<\/h4>",
-              "subheading": "shop now",
-              "price": "",
-              "price_desc": "",
-              "heading_add": "",
-              "subheading_add": ""
-            }
-          },
-          "1489547106333": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/2222-03.png",
-              "image_thumb": "shopify:\/\/shop_images\/222-06.png",
-              "link": "shopify:\/\/collections\/slidecollection_ishiya",
-              "heading": "<h4>Ishiya<\/h4>",
+              "image": "shopify:\/\/shop_images\/2-03.jpg",
+              "image_thumb": "shopify:\/\/shop_images\/2-06_42cf6dc3-6719-42b4-93f3-31224adb6b96.jpg",
+              "link": "shopify:\/\/collections\/the-seventh-store",
+              "heading": "<h4>The Seventh Store<\/h4>",
               "subheading": "shop now",
               "price": "",
               "price_desc": "",
@@ -436,6 +408,34 @@
               "image_thumb": "shopify:\/\/shop_images\/22_-2-06.png",
               "link": "shopify:\/\/collections\/kobe-pudding",
               "heading": "<h4>Kobe Pudding<\/h4>",
+              "subheading": "shop now",
+              "price": "",
+              "price_desc": "",
+              "heading_add": "",
+              "subheading_add": ""
+            }
+          },
+          "1492474107001": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2-03_61b9811b-a060-40bf-a32a-0e003fb7faf7.png",
+              "image_thumb": "shopify:\/\/shop_images\/111-06.png",
+              "link": "shopify:\/\/collections\/tokyo-banana",
+              "heading": "<h4>Tokyo Banana<\/h4>",
+              "subheading": "shop now",
+              "price": "",
+              "price_desc": "",
+              "heading_add": "",
+              "subheading_add": ""
+            }
+          },
+          "1489547106333": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2222-03.png",
+              "image_thumb": "shopify:\/\/shop_images\/222-06.png",
+              "link": "shopify:\/\/collections\/slidecollection_ishiya",
+              "heading": "<h4>Ishiya<\/h4>",
               "subheading": "shop now",
               "price": "",
               "price_desc": "",
@@ -459,10 +459,10 @@
           }
         },
         "block_order": [
-          "1492474107001",
           "1477737960076",
-          "1489547106333",
           "1489026727915",
+          "1492474107001",
+          "1489547106333",
           "1492473948551"
         ],
         "settings": {
@@ -487,46 +487,6 @@
           "fixed_bar_search_enable": true,
           "fixed_bar_links": "collections"
         }
-      },
-      "offers-section_1": {
-        "type": "offers-section",
-        "blocks": {
-          "1477745788845": {
-            "type": "offer_section",
-            "settings": {
-              "img__special_offer_lg": "shopify:\/\/shop_images\/2-02_2_63b3efb0-d520-4b50-bf0a-66321daa4533.png",
-              "img__special_offer_xs": "shopify:\/\/shop_images\/2-02_2_721a063c-dbb4-437a-b3eb-9ea83faa93d5.png",
-              "heading": "Fruit",
-              "subheading": "",
-              "mark_enable": false,
-              "color_mark": "#4ee377",
-              "color_mark_text": "#fff5f5",
-              "mark_title": "",
-              "mark_price": "Enjoy",
-              "btn_url": "shopify:\/\/collections\/fruit-1"
-            }
-          },
-          "1477745429658": {
-            "type": "offer_section",
-            "settings": {
-              "img__special_offer_lg": "shopify:\/\/shop_images\/2-01_1.png",
-              "img__special_offer_xs": "shopify:\/\/shop_images\/2-01_1_5ffc43cd-7162-49d7-b369-696c6038d467.png",
-              "heading": "Noodle",
-              "subheading": "",
-              "mark_enable": false,
-              "color_mark": "#65aef2",
-              "color_mark_text": "#ffffff",
-              "mark_title": "with each other",
-              "mark_price": "Together",
-              "btn_url": "shopify:\/\/collections\/noodle"
-            }
-          }
-        },
-        "block_order": [
-          "1477745788845",
-          "1477745429658"
-        ],
-        "settings": {}
       },
       "1481843462346": {
         "type": "offers-section",
@@ -598,7 +558,7 @@
       "1483214645452": {
         "type": "offers-product-02",
         "settings": {
-          "product": "valentine-box"
+          "product": "love-box"
         }
       },
       "featured-carouse_1": {
@@ -607,10 +567,18 @@
           "featured_collection": "featured-products",
           "autoplay": "4"
         }
+      },
+      "1495130459085": {
+        "type": "section-products_grid",
+        "settings": {
+          "section-products_grid": "new-arrivals",
+          "autoplay": "",
+          "sec_subtitle": ""
+        }
       }
     },
     "content_for_index": [
-      "offers-section_1",
+      "1495130459085",
       "1483214645452",
       "feature-collections_1",
       "featured-carouse_1"

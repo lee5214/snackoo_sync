@@ -109,7 +109,7 @@ body {
     .nav-list {
       background-color: #f8eedd !important;
       width: 100%;
-      height: 70px;
+      height: 67px;
       padding-top: 0;
       //height: 40px;ca
       /*.nav-list__item{
@@ -138,6 +138,7 @@ body {
       top: 90%;
     }
     li {
+      background: #f06060;
       width: 45px;
       height: 45px;
       @media(max-width: 768px) {
@@ -614,7 +615,7 @@ body {
   }
 
   .product {
-    box-shadow: 0px 0px 0px #d4d1d1;
+    box-shadow: 0 0 0 #d4d1d1;
     transition: all 0.3s ease-out 0s;
     padding: 20px 0;
     margin-bottom: 40px;
@@ -625,8 +626,8 @@ body {
       width: 100%;
       height: 100%;
       position: absolute;
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
       //background-color: #f06060;
       opacity: 0;
       z-index: 3;
@@ -656,6 +657,11 @@ body {
     width: 190px;
     height: 190px;
     overflow: hidden;
+  }
+  .swiper-slide-prev{
+    .product > .img-holder > .product__link {
+      transition: 600ms ease all;
+    }
   }
   .swiper-slide-active {
     //width: 300px !important;
@@ -703,7 +709,7 @@ body {
 
 #shopify-section-1493836890840 {
   .grid--in-row {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -837,9 +843,6 @@ body {
 /*product page *********************************************************************/
 
 //below is just for product.boxed template
-.collection__toolbar-views {
-  display: none;
-}
 
 @media (max-width: 759px) {
   .template-product > .similar-product > .swiper-button-prev {
@@ -1367,11 +1370,6 @@ footer {
   color: rgba(0, 251, 158, 0.24);
 }
 
-//product list
-.template-collection > div > main > section > div > div.grid > div > .collection-wrapper {
-  min-height: 400px;
-}
-
 //facebook header bug fix
 @media (max-width: 768px) {
   #shopify-section-header > header {
@@ -1476,24 +1474,25 @@ footer {
     li {
       border-color: transparent;
       border-radius: 0;
-      height: 300px;
-      top: -70px;
+      height: 200px;
+      top: -40px;
       left: 0;
       z-index: 100;
       background: white;
-      transform: rotate(20deg);
+      transform: rotate(25deg);
       transition: all 100ms ease-in-out;
       transform-origin: 20% 40%;
-
-      -webkit-transition-delay: 0s;
-      -moz-transition-delay: 0s;
-      -ms-transition-delay: 0s;
-      -o-transition-delay: 0s;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 65px;
+      -webkit-transition-delay: .3s;
+      -moz-transition-delay: .3s;
+      -ms-transition-delay: .3s;
+      -o-transition-delay: .3s;
       transition-delay: .3s;
       &:hover {
         cursor: pointer;
-        top: -100px;
-        left: 20px;
+        top: -60px;
+        left: 10px;
         transition: all 200ms ease-in-out;
 
       }
@@ -1559,4 +1558,18 @@ section.section--special-offer {
 
 .instagram-feed-container {
   background: white;
+}
+
+//product list
+.template-collection > .content-wrapper > .main-content > section{
+  .collection__toolbar{
+    position: fixed;
+    width: 200px;
+  }
+  .grid {
+    margin-left: 200px;
+    .collection-wrapper {
+      min-height: 400px;
+    }
+  }
 }

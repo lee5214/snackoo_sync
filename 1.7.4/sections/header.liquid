@@ -3,7 +3,7 @@
 		@media (min-width: 769px) {
 		  .header {
 				background-color: {{-section.settings.color_header_bg-}};
-			}
+			}\
 		}
 		</style>
 {%- endif -%}
@@ -19,7 +19,7 @@
     For setting go to Admin -> Theme -> Customize Theme -> Header
     {% endcomment %}
     <header class="header 
-		{% if template == 'index' and section.settings.transparent_home_enable %}header--clear{% endif %} 
+		{% if template == 'index' and section.settings.transparent_home_enable %}header--clear{% endif %}
 		{% if template == 'product' and product.featured_image.size > 0 %} header--clear{% endif %} 
 		{% if current_page_title == 'landing-page' or template == 'cart' or section.settings.fixed_header == false %} header--fixed-off{% endif %}">
 			<div class="header-wrapper">
@@ -39,7 +39,7 @@
                           transform: translate3d(0, 0, 0) !important;
                       }
 			.header-wrapper{
-				height: 120px;
+				height: 145px;
 				background: #f8eedd;
 
 			}

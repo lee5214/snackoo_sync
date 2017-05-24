@@ -20,7 +20,10 @@ Snippet is used to show products in 'collection.liquid', 'similar-product-carous
   </span>
 
   {% if settings.collection_product_badge == 'badge' and product.compare_at_price_min > product.price %}
-    <span class="product__badge">{{ 'products.general.sale_badge_text' | t }}</span>
+    {% comment %}<span class="product__badge">{{ 'products.general.sale_badge_text' | t }}</span>{% endcomment %}
+	  <span class="product__badge" style="text-decoration:line-through;font-weight:300;color: #ffffff;">
+		  {{ product.compare_at_price_max | money }}
+	  </span>
   {% endif %}	
   
 
